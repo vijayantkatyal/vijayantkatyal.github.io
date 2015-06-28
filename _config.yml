@@ -1,0 +1,10 @@
+excerpt_separator: ""
+pygments: true
+markdown: kramdown
+url: http://vijayantkatyal.github.io
+title: Vijayant Katyal Blog
+email: vijayantkatyal@hotmail.com
+author: Vijayant Katyal
+description: My awesome new site
+paginate: 3
+google_analytics: 
