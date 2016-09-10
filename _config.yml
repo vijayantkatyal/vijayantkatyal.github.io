@@ -18,8 +18,8 @@ bing_verification:
 
 # Optional features
 animated:             false
-show_related_posts:   true
-show_post_footers:    true
+show_related_posts:   false
+show_post_footers:    false
 show_social_icons:    false
 ajaxify_contact_form: false
 enable_mathjax: false
@@ -128,7 +128,7 @@ read-time: false
 show-tags: true
 
 # show author block at the end of a post ?
-show-author: true
+# show-author: true
 
 # show next & prev links in blog post?
 blog-nav-links: false
