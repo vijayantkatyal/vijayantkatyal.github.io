@@ -1,11 +1,17 @@
 # Site settings
 title:       Vijayant Katyal
 email:       vijayantkatyal@outlook.com
-author:      Vijayant Katyal
+author: 
+  name: Vijayant Katyal
 description: "Vijayant Katyal Thougths"
 baseurl:     ""
 url:         "http://vijayantkatyal.com"
 date_format: "%b %-d, %Y"
+
+# blog settings
+permalink: /blog/:title.html
+atom_path: /blog/atom.xml
+paginate_path: /blog/page:num
 
 # Google services
 google_verification:
@@ -106,7 +112,7 @@ text:
 markdown:     kramdown
 redcarpet:
   extensions: ['smart', 'tables', 'with_toc_data']
-permalink:    /:title/
+# permalink:    /:title/
 paginate:     4
 sass:
   compressed: true
@@ -119,6 +125,7 @@ gems:
   - jekyll-feed
   - jekyll-gist
   - jekyll-paginate
+  - jekyll-redirect-from
 # https://github.com/jekyll/jekyll/issues/2938
 exclude: [README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, src, vendor, CNAME, indigo-gh-pages.zip, Rakefile, screen-shot.png, travis.sh, tasks]
 
