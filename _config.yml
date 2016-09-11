@@ -1,8 +1,7 @@
 # Site settings
 title:       Vijayant Katyal
 email:       vijayantkatyal@outlook.com
-author: 
-  name: Vijayant Katyal
+author:      Vijayant Katyal
 description: "Vijayant Katyal Thougths"
 baseurl:     ""
 url:         "http://vijayantkatyal.com"
