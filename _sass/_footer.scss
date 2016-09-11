@@ -27,3 +27,13 @@ footer {
   padding: $footer-padding;
   // text-align: center;
 }
+
+
+#fix_footer{
+  display: inline-block;
+  float: right;
+  
+  a {
+    color: #373737;
+  }
+}
