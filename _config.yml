@@ -25,7 +25,6 @@ animated:             true
 show_related_posts:   false
 show_post_footers:    false
 show_social_icons:    true
-ajaxify_contact_form: false
 enable_mathjax: false
 extended_fonts: false
 enable_anchorjs: false
@@ -41,7 +40,7 @@ twitter_username: vijayantkatyal
 medium_id:
 
 # Post sharing icons
-show_sharing_icons: true
+show_sharing_icons: false
 # Change to 'true' to enable individual icons
 share_twitter: true
 
