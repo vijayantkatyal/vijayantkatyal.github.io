@@ -1,8 +1,17 @@
 <footer>
   <div class="measure">
-    <small>
-      &copy; Vijayant Katyal 2016
-    </small>
+    <div class="clearfix">
+      <div class="col col-6">
+        <small>
+          &copy; Vijayant Katyal 2016
+        </small>
+      </div>
+      <div class="col col-6">
+        {% if site.show_social_icons %}
+          {% include social_links.html %}
+        {% endif %}
+      </div>
+    </div>
   </div>
 </footer>
 {% if site.enable_anchorjs %}<!-- AnchorJS -->
