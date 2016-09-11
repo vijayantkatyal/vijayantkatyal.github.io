@@ -1,6 +1,5 @@
 # Site settings
 title:       Vijayant Katyal
-email:       vijayantkatyal@outlook.com
 author:      Vijayant Katyal
 description: "Vijayant Katyal Thougths"
 baseurl:     ""
@@ -42,7 +41,7 @@ twitter_username: vijayantkatyal
 medium_id:
 
 # Post sharing icons
-show_sharing_icons: false
+show_sharing_icons: true
 # Change to 'true' to enable individual icons
 share_twitter: true
 
