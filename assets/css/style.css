@@ -3,9 +3,11 @@ body {
 }
 
 a {
-	color:#2196F3;
+	color:#55595c;
+	transition: color 300ms ease-in-out;
 }
 a:hover {
+	color: #2196F3;
 	text-decoration: none;
 }
 

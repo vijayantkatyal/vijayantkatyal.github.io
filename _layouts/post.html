@@ -11,7 +11,9 @@ class: blog
 		<p class="lead">
 			{{ page.date | date: site.date_format }} {% if page.update_date %} {{ site.text.post.updated }}: {{ page.update_date | date: site.date_format }} {% endif %} | 40 Comments
 			<br>
-			<span class="tag tag-default">ASP.NET CORE</span> <span class="tag tag-default">Docker</span>
+			{% for category in page.categories %}
+				<span class="tag tag-default">{{ category }}</span>
+			{% endfor %}
 		</p>
 	</div>
 </div>

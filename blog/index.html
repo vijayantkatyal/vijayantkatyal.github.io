@@ -14,7 +14,9 @@ layout: blog
 				<span class="post-meta">
 					<time datetime="{{ post.date | date: site.date_format }}">{{ post.date | date: site.date_format }}</time> | <a href="#" data-discuss-identified="1">40 Comments</a>
 					<div class="post-tags">
-						<span class="tag tag-default">docker</span> <span class="tag tag-default">ASP.NET</span>
+						{% for category in post.categories %}
+							<span class="tag tag-default">{{ category }}</span>
+						{% endfor %}						
 					</div>
 				<h2 class="post-title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
 			</header>
