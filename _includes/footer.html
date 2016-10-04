@@ -1,13 +1,34 @@
-<footer>
-  <div class="measure">
-    {% if site.show_social_icons %}
-      {% include social_links.html %}
-    {% endif %}
+<footer class="footer">
+  <div class="container">
+    All content copyright
+    <a href="/">
+      <u>Vijayant Katyal</u>
+    </a> &copy; 2016 • All rights reserved.<br>
+		Proudly published with GitHub Pages
+		<br><br>
+    <span class="follow">
+				{% if site.twitter_username %}
+				<a href="https://twitter.com/{{ site.twitter_username }}" target="_new">
+					<i class="fa fa-twitter"></i>
+				</a>
+				{% endif %}
+				{% if site.github_username %}
+				<a href="https://github.com/{{ site.github_username }}" target="_new">
+					<i class="fa fa-github"></i>
+				</a>
+				{% endif %}
+				{% if site.stackoverflow_id %}
+				<a href="https://stackoverflow.com/users/{{ site.stackoverflow_id }}" target="_new">
+					<i class="fa fa-stack-overflow"></i>
+				</a>
+				{% endif %}
+				<a href="/blog/atom.xml" target="_new">
+					<i class="fa fa-feed"></i>
+				</a>
+			</span>
   </div>
 </footer>
-{% if site.enable_anchorjs %}<!-- AnchorJS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.0.0/anchor.min.js"></script>
-<script>
-    anchors.options.visible = 'always';
-    anchors.add('article h2, article h3, article h4, article h5, article h6');
-</script>{% endif %}
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js" crossorigin="anonymous"></script>

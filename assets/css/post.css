@@ -1,0 +1,147 @@
+body {
+	background-color: #f7f7f7;
+	padding-top: 0px;
+}
+
+.navbar-toggler {
+	position: relative;
+	top: 10px;
+	color: #ccc;
+}
+
+.navbar-toggler::after {
+	padding-left: 10px;
+	content: "Menu";
+}
+
+.header,
+.footer {
+	padding-right: 1rem;
+	padding-left: 1rem
+}
+
+.header {
+	padding-bottom: 1rem;
+	border-bottom: .05rem solid #e5e5e5
+}
+
+.header h3 {
+	margin-top: 0;
+	margin-bottom: 0;
+	line-height: 3rem
+}
+
+@media (min-width:48em) {
+	.container {
+		max-width: 46rem
+	}
+}
+
+.container-narrow>hr {
+	margin: 2rem 0
+}
+
+.jumbotron {
+	text-align: center;
+	border-bottom: .05rem solid #e5e5e5;
+	background-color: #373a3c;
+	color: #ccc;
+	margin-bottom: 0px;
+	margin-top: -40px;
+	padding-top: 6rem;
+	padding-bottom: 6rem;
+}
+
+.jumbotron .btn {
+	padding: .75rem 1.5rem;
+	font-size: 1.5rem
+}
+
+@media screen and (min-width:48em) {
+	.header,
+	.footer {
+		padding-right: 0;
+		padding-left: 0
+	}
+	.header {
+		margin-bottom: 2rem
+	}
+	.jumbotron {
+		border-bottom: 0
+	}
+}
+
+.navbar-collapse .container-fluid {
+	padding: 2rem 2.5rem;
+	border-bottom: 1px solid #ccc;
+}
+
+.navbar-collapse h4 {
+	color: #818a91
+}
+
+.navbar-collapse .text-muted {
+	color: #818a91
+}
+
+.post {
+	border-bottom: #ebf2f6 1px solid;
+	padding-bottom: 2rem;
+	padding-top: 2rem;
+	word-break: break-word;
+}
+
+.post .post-meta {
+	margin: 0 0 5px 0;
+	font-family: 'Open Sans',sans-serif;
+	font-size: 1.5 rem;
+	color: #9eabb3;
+}
+
+.post .post-meta a {
+	color: #9eabb3;
+	text-decoration: none;
+}
+
+.post .post-tags {
+	display: inline-block;
+	float: right;
+}
+
+.post .post-title {
+	margin: 0;
+	font-size: 3rem;
+	letter-spacing: -1px;
+	line-height: 1.2em;
+	text-indent: -2px;
+	text-rendering: optimizeLegibility;
+	font-family: 'Open Sans',sans-serif;
+}
+
+.post .post-title a {
+	color: #50585d;
+	transition: color 300ms ease-in-out;
+}
+
+.post .post-title a:hover {
+	color: #2196F3;
+}
+
+.post .post-excerpt p {
+	line-height: 1.6em;
+}
+
+.posts .post_pagination {
+	color: #9eabb3;
+}
+.posts .post_pagination a {
+	color: #9eabb3;
+	padding: 5px 10px 5px 10px;
+	border: #ebf2f6 2px solid;
+	text-decoration: none;
+	border-radius: 30px;
+	transition: border ease .3s;
+}
+.posts .post_pagination a:hover {
+	color: #2196F3;
+}

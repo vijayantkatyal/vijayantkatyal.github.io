@@ -5,6 +5,7 @@ description: "Vijayant Katyal Thougths"
 baseurl:     ""
 url:         "http://vijayantkatyal.com"
 date_format: "%b %-d, %Y"
+email: vijayantkatyal@hotmail.com
 
 # blog settings
 permalink: /blog/:title.html
@@ -21,13 +22,9 @@ google_tag_manager:
 bing_verification:
 
 # Optional features
-animated:             true
 show_related_posts:   false
 show_post_footers:    false
 show_social_icons:    true
-enable_mathjax: false
-extended_fonts: false
-enable_anchorjs: false
 
 # Disqus post comments
 # (leave blank to disable Disqus)
@@ -37,7 +34,6 @@ disqus_shortname:
 github_username: vijayantkatyal
 stackoverflow_id: 1389973
 twitter_username: vijayantkatyal
-medium_id:
 
 # Post sharing icons
 show_sharing_icons: false
@@ -64,8 +60,6 @@ redcarpet:
   extensions: ['smart', 'tables', 'with_toc_data']
 # permalink:    /:title/
 paginate:     4
-sass:
-  compressed: true
 gems:
   - jekyll-paginate
   - jekyll-sitemap

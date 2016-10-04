@@ -1,21 +1,31 @@
 <div class="pagination clearfix mb1 mt4">
   <div class="left">
-    {% if paginator.previous_page %}
-      {% if paginator.page == 2 %}
-        <a class="pagination-item" href="{{ site.baseurl }}/">{{ site.text.pagination.newer }}</a>
-      {% else %}
-        <a class="pagination-item" href="{{ paginator.previous_page_path }}">{{ site.text.pagination.newer }}</a>
-      {% endif %}
-    {% else %}
-      <span class="pagination-item disabled">{{ site.text.pagination.newer }}</span>
-    {% endif %}
+	{% if paginator.previous_page %}
+	  {% if paginator.page == 2 %}
+		<a class="pagination-item" href="{{ site.baseurl }}/">{{ site.text.pagination.newer }}</a>
+	  {% else %}
+		<a class="pagination-item" href="{{ paginator.previous_page_path }}">{{ site.text.pagination.newer }}</a>
+	  {% endif %}
+	{% else %}
+	  <span class="pagination-item disabled">{{ site.text.pagination.newer }}</span>
+	{% endif %}
   </div>
   <div class="right">
-    {% if paginator.next_page %}
-      <a class="pagination-item" href="{{ paginator.next_page_path }}">{{ site.text.pagination.older }}</a>
-    {% else %}
-      <span class="pagination-item disabled">{{ site.text.pagination.older }}</span>
-    {% endif %}
+	{% if paginator.next_page %}
+	  <a class="pagination-item" href="{{ paginator.next_page_path }}">{{ site.text.pagination.older }}</a>
+	{% else %}
+	  <span class="pagination-item disabled">{{ site.text.pagination.older }}</span>
+	{% endif %}
   </div>
   <div class="pagination-meta">Page {{ paginator.page }} of {{ paginator.total_pages }}</div>
 </div>
+
+<!--<div class="row post_pagination">
+	<div class="col-md-4 col-sm-4 text-sm-left col-xs-12 text-xs-center">
+		<a href="#">Newer Posts</a>
+	</div>
+	<div class="col-md-4 col-sm-4 text-sm-center col-xs-12 text-xs-center info">Page 1 of 1</div>
+	<div class="col-md-4 col-sm-4 text-sm-right col-xs-12 text-xs-center">
+		<a href="#">Older Posts</a>
+	</div>
+</div>-->

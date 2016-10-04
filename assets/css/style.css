@@ -1,0 +1,40 @@
+body {
+	padding-top: 20px;
+}
+
+a {
+	color:#2196F3;
+}
+a:hover {
+	text-decoration: none;
+}
+
+.navbar {
+	margin-bottom: 20px;
+}
+
+.footer {
+	position: relative;
+	margin: 8rem 0 0 0;
+	padding: 4rem 0;
+	border-top: .05rem solid #e5e5e5;
+	line-height: 1.7em;
+	text-align: center;
+	background: #f7fafb;
+	color: #bbc7cc;
+	padding-top: 1.5rem;
+}
+
+.footer a {
+	color: #9E9E9E;
+}
+
+.footer a:hover {
+	color: #000;
+	text-decoration: none;
+}
+
+.footer .follow a {
+	margin-right: 10px;
+	font-size: 18px;
+}

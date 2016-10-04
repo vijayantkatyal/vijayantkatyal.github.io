@@ -1,13 +1,63 @@
-<header class="site-header px2 px-responsive">
-  <div class="mt2 wrap">
-    <div class="measure">
-      <a href="{{ site.url }}" class="site-title">{{ site.title }}</a>
-      <nav class="site-nav">
-        {% include navigation.html %}
-      </nav>
+<div class="navbar-collapse collapse inverse" id="navbar-header">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-3">
+        <h4>Menu</h4>
+        <ul class="list-unstyled">
+          <li><a href="/">Home</a></li>
+          <li><a href="/blog">Blog</a></li>
+          <li><a href="/projects">Projects</a></li>
+          <li><a href="/lists">Lists</a></li>
+          <li><a href="http://stackoverflow.com/cv/vijayantkatyal" target="_new">CV</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-6">
+        <h4>About</h4>
+        <p class="text-muted">
+          Add some information about the album below, the author, or any other background context. Make it a few sentences long so
+          folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.
+        </p>
+      </div>
+      <div class="col-sm-3">
+        <h4>Contact</h4>
+        <ul class="list-unstyled">
+          {% if site.email %}
+          <li>
+            <a href="mailto:{{ site.email }}">
+              <i class="fa fa-envelope"></i> Email
+            </a>
+          </li>
+          {% endif %}
+          {% if site.twitter_username %}
+          <li>
+            <a href="https://twitter.com/{{ site.twitter_username }}" target="_new">
+              <i class="fa fa-twitter"></i> Twitter
+            </a>
+          </li>
+          {% endif %}
+          {% if site.github_username %}
+          <li>
+            <a href="https://github.com/{{ site.github_username }}" target="_new">
+              <i class="fa fa-github"></i> GitHub
+            </a>
+          </li>
+          {% endif %}
+          <li>
+            <a href="/blog/atom.xml" target="_new">
+              <i class="fa fa-feed"></i> Feed
+            </a>
+          </li>
+          {% if site.stackoverflow_id %}
+          <li>
+            <a href="https://stackoverflow.com/users/{{ site.stackoverflow_id }}" target="_new">
+              <i class="fa fa-stack-overflow"></i> StackOverflow
+            </a>
+          </li>
+          {% endif %}
+        </ul>
+      </div>
     </div>
   </div>
-</header>
-<div class="measure">
-<hr id="hr_fix">
 </div>
+
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-header">&#9776;</button>

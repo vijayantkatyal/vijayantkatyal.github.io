@@ -1,28 +1,39 @@
 ---
-layout: default
+layout: blog
 ---
 {% assign posts_count = (paginator.posts | size) %}
 
-<div class="home">
-  {% if posts_count > 0 %}
-    <div class="posts">
-      {% for post in paginator.posts %}
-        <div class="post py3">
-          <p class="post-meta">{{ post.date | date: site.date_format }}</p>
-          <a href="{{ post.url | prepend: site.baseurl }}" class="post-link"><h3 class="h1 post-title">{{ post.title }}</h3></a>
-          <p class="post-summary">
-            {% if post.summary %}
-              {{ post.summary }}
-            {% else %}
-              {{ post.excerpt }}
-            {% endif %}
-          </p>
-        </div>
-      {% endfor %}
-    </div>
+{% if posts_count > 0 %}
 
-    {% include pagination.html %}
-  {% else %}
-    <h1 class='center'>{{ site.text.index.coming_soon }}</h3>
-  {% endif %}
+<div class="posts">
+
+	{% for post in paginator.posts %}
+
+		<article class="post">
+			<header class="post-header">
+				<span class="post-meta">
+					<time datetime="{{ post.date | date: site.date_format }}">{{ post.date | date: site.date_format }}</time> | <a href="#" data-discuss-identified="1">40 Comments</a>
+					<div class="post-tags">
+						<span class="tag tag-default">docker</span> <span class="tag tag-default">ASP.NET</span>
+					</div>
+				<h2 class="post-title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+			</header>
+			<section class="post-excerpt">
+				<p>
+					{% if post.summary %}
+						{{ post.summary }}
+					{% endif %}
+				</p>
+			</section>
+		</article>
+	
+	{% endfor %}
+	
+	<br><br><br>
+
+	{% include pagination.html %}
+
 </div>
+{% else %}
+	<h1 class='text-xs-center'>{{ site.text.index.coming_soon }}</h3>
+{% endif %}
