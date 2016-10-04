@@ -1,21 +1,23 @@
-<div class="row">
-	<div class="col-md-4 col-sm-4 text-sm-left col-xs-12 text-xs-center">
-		{% if paginator.previous_page %}
-			{% if paginator.page == 2 %}
-				<a href="{{ site.baseurl }}/blog/" class="btn btn-outline-info">{{ site.text.pagination.newer }}</a>
+{% if paginator.previous_page != nil && paginator.next_page != nil %}
+	<div class="row">
+		<div class="col-md-4 col-sm-4 text-sm-left col-xs-12 text-xs-center">
+			{% if paginator.previous_page %}
+				{% if paginator.page == 2 %}
+					<a href="{{ site.baseurl }}/blog/" class="btn btn-outline-info">{{ site.text.pagination.newer }}</a>
+				{% else %}
+					<a href="{{ paginator.previous_page_path }}" class="btn btn-outline-info">{{ site.text.pagination.newer }}</a>
+				{% endif %}
 			{% else %}
-				<a href="{{ paginator.previous_page_path }}" class="btn btn-outline-info">{{ site.text.pagination.newer }}</a>
+				<a href="#" class="btn btn-outline-secondary disabled">Newer Posts</a>
 			{% endif %}
-		{% else %}
-			<a href="#" class="btn btn-outline-secondary disabled">Newer Posts</a>
-		{% endif %}
+		</div>
+		<div class="col-md-4 col-sm-4 text-sm-center col-xs-12 text-xs-center text-muted" style="margin-top:5px;">Page {{ paginator.page }} of {{ paginator.total_pages }}</div>
+		<div class="col-md-4 col-sm-4 text-sm-right col-xs-12 text-xs-center">
+			{% if paginator.next_page %}
+				<a href="{{ paginator.next_page_path }}" class="btn btn-outline-info">{{ site.text.pagination.older }}</a>
+			{% else %}
+				<a href="#" class="btn btn-outline-secondary disabled">Older Posts</a>
+			{% endif %}
+		</div>
 	</div>
-	<div class="col-md-4 col-sm-4 text-sm-center col-xs-12 text-xs-center text-muted" style="margin-top:5px;">Page {{ paginator.page }} of {{ paginator.total_pages }}</div>
-	<div class="col-md-4 col-sm-4 text-sm-right col-xs-12 text-xs-center">
-		{% if paginator.next_page %}
-			<a href="{{ paginator.next_page_path }}" class="btn btn-outline-info">{{ site.text.pagination.older }}</a>
-		{% else %}
-			<a href="#" class="btn btn-outline-secondary disabled">Older Posts</a>
-		{% endif %}
-	</div>
-</div>
+{% endif %}
