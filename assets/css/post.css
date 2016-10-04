@@ -9,9 +9,26 @@ body {
 	color: #ccc;
 }
 
+.navbar-toggler::before {
+	display: inline-block;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	content: "\f0c9";
+	font:20px/1 FontAwesome;
+}
+
+.navbar-toggler[aria-expanded='true']::before {
+	content: "\f00d";
+}
+
 .navbar-toggler::after {
 	padding-left: 10px;
-	content: "Menu";
+	content: "Menu"; 
+}
+
+.navbar-toggler[aria-expanded='true']::after {
+	content: "Close";
 }
 
 .header,
