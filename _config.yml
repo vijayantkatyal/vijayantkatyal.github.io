@@ -1,7 +1,7 @@
 # Site settings
 title:       Vijayant Katyal
 author:      Vijayant Katyal
-description: "Vijayant Katyal Thougths"
+description: "Vijayant Katyal's Blog"
 baseurl:     ""
 url:         "http://vijayantkatyal.com"
 date_format: "%b %-d, %Y"
@@ -28,7 +28,7 @@ show_social_icons:    true
 
 # Disqus post comments
 # (leave blank to disable Disqus)
-disqus_shortname:
+disqus_shortname: vijayantkatyal
 
 # Social icons
 github_username: vijayantkatyal

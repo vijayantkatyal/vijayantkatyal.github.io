@@ -12,7 +12,7 @@ layout: blog
 		<article class="post">
 			<header class="post-header">
 				<span class="post-meta">
-					<time datetime="{{ post.date | date: site.date_format }}">{{ post.date | date: site.date_format }}</time> | <a href="#" data-discuss-identified="1">40 Comments</a>
+					<time datetime="{{ post.date | date: site.date_format }}">{{ post.date | date: site.date_format }}</time> {% if post.comments != false %} | <a href="{{ post.url | prepend: site.baseurl }}#disqus_thread" data-discuss-identifier="{{ post.id }}">0 Comments</a> {% endif %}
 					<div class="post-tags">
 						{% for category in post.categories %}
 							<span class="tag tag-default">{{ category }}</span>
