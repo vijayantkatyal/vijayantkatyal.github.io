@@ -36,13 +36,13 @@ stackoverflow_id: 1389973
 twitter_username: vijayantkatyal
 
 # Post sharing icons
-show_sharing_icons: false
+show_sharing_icons: true
 # Change to 'true' to enable individual icons
 share_twitter: true
 
 text:
   share_buttons:
-    text:         'Share this post!'
+    text:         'Share'
   post:
     updated:        'Updated'
     minute_read:    'minute read'

@@ -20,7 +20,10 @@ layout: post_container
 	<br><br>
 	{{ content }}
 	<br><br>
-	{% if site.show_sharing_icons %} {% include share_buttons.html %} {% endif %}
+	{% if site.show_sharing_icons %}
+		{% include share_buttons.html %}
+		<br>
+	{% endif %}
 
 	{% if site.show_post_footers %}
 		{% include post_footer.html %}

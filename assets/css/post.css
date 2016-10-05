@@ -166,3 +166,20 @@ body {
 .jumbotron p.lead > a[data-discuss-identifier] {
 	color: #ccc;
 }
+
+.share h5 {
+	color: #546673;
+}
+
+.share a {
+	font-size: 20px;
+	margin-right: 5px;
+}
+
+.share .fa-twitter {
+	color: #1da1f2;
+}
+
+.share .fa-envelope {
+	color: #673AB7;
+}
