@@ -41,9 +41,6 @@ show_sharing_icons: false
 share_twitter: true
 
 text:
-  pagination:
-    newer: 'Newer'
-    older: 'Older'
   share_buttons:
     text:         'Share this post!'
   post:
@@ -53,6 +50,8 @@ text:
   index:
     coming_soon: 'Coming soon...'
   og_locale: 'en_US'
+
+jekyll-mentions: https://twitter.com
 
 # Build settings
 markdown:     kramdown
