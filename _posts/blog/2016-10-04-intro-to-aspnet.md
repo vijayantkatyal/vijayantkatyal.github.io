@@ -24,6 +24,8 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque nesciunt necessi
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus porro laborum quis dolore cupiditate minima cum, quo perspiciatis ipsa, autem magnam labore itaque nobis sed, amet consequatur necessitatibus at molestiae.
 
+main.rb
+{: .code_title}
 ~~~ ruby
 /**
  * Verilog Lexer
@@ -54,8 +56,8 @@ module Foo(
 endmodule
 ~~~
 
-<br>
-
+file.css
+{: .code_title}
 ~~~ css
 body {
 	background-color: #f7f7f7;

@@ -123,3 +123,39 @@
 .highlight .vg { color: #008080 } /* Name.Variable.Global */
 .highlight .vi { color: #008080 } /* Name.Variable.Instance */
 .highlight .il { color: #009999 } /* Literal.Number.Integer.Long */
+
+.code_title::before {
+	display: inline-block;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	content: "\f121";
+	font:15px/1 FontAwesome;
+	padding-left: 10px;
+	padding-right: 20px;
+	color: #de455b;
+}
+
+.code_title {
+	background-color: #f7f7f7;
+	border: 1px solid #ddd;
+	margin-top: 40px;
+	margin-bottom: 0px;
+	border-bottom: 0px;
+	padding: 10px;
+	color: #de455b;
+	font-weight: 500; 
+}
+
+.code_title::after {
+	display: inline-block;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	content: "\f0c5";
+	font:15px/1 FontAwesome;
+	float: right;
+	color: #000;
+	cursor: pointer;
+	margin-top: 6px; 
+}
