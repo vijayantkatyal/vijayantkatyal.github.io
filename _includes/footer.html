@@ -6,6 +6,11 @@
 		</a> &copy; 2016 • All rights reserved.<br> Proudly published with GitHub Pages
 		<br><br>
 		<span class="follow">
+			{% if site.email %}
+            <a href="mailto:{{ site.email }}?subject=Hi, Vijayant Katyal&body=visitor from {{ site.url }}{{ page.url }}">
+              <i class="fa fa-envelope"></i>
+            </a>
+          	{% endif %}
 			{% if site.twitter_username %}
 			<a href="https://twitter.com/{{ site.twitter_username }}" target="_new">
 				<i class="fa fa-twitter"></i>
