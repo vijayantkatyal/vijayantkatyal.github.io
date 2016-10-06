@@ -6,6 +6,7 @@ baseurl:     ""
 url:         "http://vijayantkatyal.com"
 date_format: "%b %-d, %Y"
 email: vijayantkatyal@hotmail.com
+bio: Web Developer
 
 # blog settings
 permalink: /blog/:title.html
@@ -42,7 +43,7 @@ share_twitter: true
 
 text:
   share_buttons:
-    text:         'Share'
+    text:         'Share this post'
   post:
     updated:        'Updated'
     minute_read:    'minute read'

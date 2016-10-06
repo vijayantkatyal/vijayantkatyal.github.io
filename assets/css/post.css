@@ -167,6 +167,10 @@ body {
 	color: #ccc;
 }
 
+.share hr {
+	border-top: #ebf2f6 1px solid;
+}
+
 .share h5 {
 	color: #546673;
 }
