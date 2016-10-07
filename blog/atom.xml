@@ -5,7 +5,6 @@ title: Vijayant Katyal Blog Atom Feed
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title>Vijayant Katyal's Blog</title>
-  <description>Vijayant Katyal thoughts on life and web development</description>
   <link href="{{ site.url }}{{ site.atom_path }}" rel="self"/>
   <link href="{{ site.url }}"/>
   <updated>{{ site.time | date_to_xmlschema }}</updated>
