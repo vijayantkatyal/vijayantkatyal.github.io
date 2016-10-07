@@ -40,3 +40,17 @@ a:hover {
 	margin-right: 10px;
 	font-size: 18px;
 }
+
+.index_link {
+	border-bottom: 1px dashed #8c8c8c;
+}
+
+.index_contact {
+	text-align: center;
+	margin-top: 10px;
+}
+
+.index_contact i {
+	font-size: 20px;
+	padding: 5px;
+}
