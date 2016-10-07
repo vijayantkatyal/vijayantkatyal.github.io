@@ -15,7 +15,7 @@ layout: blog
 					<time datetime="{{ post.date | date: site.date_format }}">{{ post.date | date: site.date_format }}</time> {% if post.comments != false %} | <a href="{{ post.url | prepend: site.baseurl }}#disqus_thread" data-discuss-identifier="{{ post.id }}">0 Comments</a> {% endif %}
 					<div class="post-tags">
 						{% for category in post.categories %}
-							<span class="tag tag-default">{{ category }}</span>
+							<a href="/blog/category/{{ category }}" class="tag tag-default">{{ category }}</a>
 						{% endfor %}						
 					</div>
 				<h2 class="post-title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>

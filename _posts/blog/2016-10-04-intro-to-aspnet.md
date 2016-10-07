@@ -3,7 +3,7 @@ layout:     post
 title:      Introduction to ASP.NET
 date:       2016-10-04 04:17
 summary:    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus a nisi atque fugit reprehenderit iusto quos earum quo necessitatibus perferendis
-categories: asp.net EF
+categories: asp.net
 update_date: 2016-10-06 04:17
 ---
 

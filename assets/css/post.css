@@ -125,6 +125,10 @@ body {
 	float: right;
 }
 
+.post .post-tags a{
+	color: #fff;
+}
+
 .post .post-title {
 	margin: 0;
 	font-size: 3rem;

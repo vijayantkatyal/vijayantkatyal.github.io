@@ -1,0 +1,45 @@
+---
+layout: post_container
+---
+<div class="jumbotron jumbotron-fluid">
+	<div class="container">
+		<h1 class="display-4 jumbotron-heading">
+			<span class="tag tag-default">{{ page.title }}</span>
+		</h1>
+	</div>
+</div>
+
+<div class="container">
+	{% unless page.content == '' %}
+		<p>{{ page.content }}</p>
+	{% endunless %}
+
+	{% unless site.categories.[page.category] | size > 0 %}
+		<br><br>
+		<p class="text-warning text-xs-center">No posts in this category at this time.</p>
+	{% endunless %}
+
+	<div class="posts">
+		{% for post in site.categories.[page.category] %}
+			<article class="post">
+				<header class="post-header">
+					<span class="post-meta">
+						<time datetime="{{ post.date | date: site.date_format }}">{{ post.date | date: site.date_format }}</time> {% if post.comments != false %} | <a href="{{ post.url | prepend: site.baseurl }}#disqus_thread" data-discuss-identifier="{{ post.id }}">0 Comments</a> {% endif %}
+						<div class="post-tags">
+							{% for category in post.categories %}
+								<a class="tag tag-default" href="/blog/category/{{ category }}">{{ category }}</a>
+							{% endfor %}				
+						</div>
+					<h2 class="post-title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+				</header>
+				<section class="post-excerpt">
+					<p class="text-muted">
+						{% if post.summary %}
+							{{ post.summary }}
+						{% endif %}
+					</p>
+				</section>
+			</article>
+		{% endfor %}
+	</div>
+</div>
