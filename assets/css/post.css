@@ -69,6 +69,11 @@ body {
 	padding-bottom: 6rem;
 }
 
+.jumbotron.post_featured_image {
+	background: center center no-repeat #373a3c;
+	background-size: cover;
+}
+
 .jumbotron .btn {
 	padding: .75rem 1.5rem;
 	font-size: 1.5rem

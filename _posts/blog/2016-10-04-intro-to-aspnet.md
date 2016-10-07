@@ -5,6 +5,7 @@ date:       2016-10-04 04:17
 summary:    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus a nisi atque fugit reprehenderit iusto quos earum quo necessitatibus perferendis
 categories: asp.net
 update_date: 2016-10-06 04:17
+featured_image: 2016-10-07.png
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam sequi placeat delectus rem totam quos impedit reprehenderit distinctio tenetur nostrum illum dicta, veritatis consequuntur blanditiis quaerat. Quibusdam, eveniet incidunt nobis.

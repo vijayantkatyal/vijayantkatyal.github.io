@@ -1,7 +1,11 @@
 ---
 layout: post_container
 ---
-<div class="jumbotron jumbotron-fluid">
+{% if page.featured_image != '' %}
+	<div class="jumbotron jumbotron-fluid post_featured_image" style="background-image: url('/assets/images/featured/{{ page.featured_image}}');">
+{% else %}
+	<div class="jumbotron jumbotron-fluid">
+{% endif %}
 	<div class="container">
 		<h1 class="display-4 jumbotron-heading">
 			{{ page.title }}
