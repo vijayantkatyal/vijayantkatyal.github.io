@@ -54,3 +54,18 @@ a:hover {
 	font-size: 20px;
 	padding: 5px;
 }
+
+body.error_page {
+	background-image: url('/assets/gifs/friends.gif');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+body.error_page #navbar-header {
+	background-color: #fff;
+}
+
+body.error_page div.container {
+	color: #fff;
+}
