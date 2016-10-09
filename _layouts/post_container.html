@@ -6,7 +6,9 @@ layout: compress
 {% include head.html %}
 <body>
 	{% include header.html %}
-	{{ content }}
+	<div itemscope itemtype="http://schema.org/BlogPosting">
+		{{ content }}
+	</div>
 	{% include footer.html %}
 	<script type="text/javascript" src="/assets/js/copy.js"></script>
 </body>

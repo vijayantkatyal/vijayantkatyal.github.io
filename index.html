@@ -1,6 +1,6 @@
 ---
 layout: compress
-meta_description: Vijayant Katyal
+meta_description: Vijayant Katyal is a full stack web developer helping make the world a better place through his work. 
 ---
 <!DOCTYPE html>
 <html>
@@ -29,6 +29,10 @@ meta_description: Vijayant Katyal
     
     <title>{% if page.title %}{{ page.title | strip_html }} &#8211; {% endif %}{{ site.title | strip_html }}</title>
     
+	<link rel="me" type="text/html" href="http://github.com/vijayantkatyal"/> 
+	<link rel="me" type="text/html" href="https://vijayantkatyal.com/blog/atom.xml"/> 
+	<link rel="me" type="text/html" href="http://twitter.com/vijayantkatyal"/> 
+
     <link rel="icon" type="image/png" sizes="16x16" href="/icon.png">
     <link rel="dns-prefetch" href="//maxcdn.bootstrapcdn.com">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" crossorigin="anonymous">
@@ -40,13 +44,13 @@ meta_description: Vijayant Katyal
 </head>
 <body>
     <br><br>
-    <div class="container">
+    <div class="container" itemscope itemtype="http://schema.org/Person">
         <div class="row-fluid">
 			<div class="col-sm-5">
 				<br>
-				<img src="/assets/images/me.jpg" class="img-fluid img-circle" alt="">
+				<img src="/assets/images/me.jpg" itemprop="image" class="img-fluid img-circle" alt="">
 				<br>
-				<h4 class="text-xs-center">Vijayant Katyal</h4>
+				<h4 class="text-xs-center" itemprop="name">Vijayant Katyal</h4>
 				<div class="index_contact">
 					{% if site.email %}
 					<a href="mailto:{{ site.email }}?subject=Hi, Vijayant Katyal&body=visitor from {{ site.url }}{{ page.url }}">
@@ -75,12 +79,12 @@ meta_description: Vijayant Katyal
 			</div>
 			<div class="col-sm-7">
 				<p class="lead text-xs-right">
-					I am a <a class="index_link" href="http://stackoverflow.com/cv/vijayantkatyal" target="_new">full stack web developer</a> helping make the world a better place through my work.
+					I am a <a class="index_link" itemprop="jobTitle" href="http://stackoverflow.com/cv/vijayantkatyal" target="_new">full stack web developer</a> helping make the world a better place through my work.
 					<br><br>
 					I am an open-source <a class="index_link" href="https://github.com/{{ site.github_username }}">contributor</a> and I like making things that help people with their work.
-					I am the author of <a class="index_link" href="/blog">SVG Or</a>.
+					I am the author of <a class="index_link" itemprop="owns" href="/blog">SVG Or</a>.
 					<br><br>
-					Also I frequently <a class="index_link" href="/blog">Blog</a> about web development.
+					Also I frequently <a class="index_link" itemprop="owns" href="/blog">Blog</a> about web development.
 					<br><br>
 					recent posts:
 					<br>
