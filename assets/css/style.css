@@ -60,6 +60,7 @@ body.error_page {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
+	background-color: #373a3c;
 }
 
 body.error_page #navbar-header {
