@@ -11,6 +11,7 @@ meta_description: Vijayant Katyal is a full stack web developer helping make the
     {% if page.meta_robots %}<meta name="robots" content="{{ page.meta_robots }}">
     {% else %}<meta name="robots" content="all">{% endif %}
     <meta name="author" content="{{ site.author }}">
+	<link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Vijayant Katyal">
     <meta name="description" content="{% if page.meta_description %}{{ page.meta_description | xml_escape }}{% elsif page.summary %}{{ page.summary | xml_escape }}{% else %}{{ site.description | xml_escape }}{% endif %}">
     {% if page.categories %}<meta name="keywords" content="{{ page.categories | join: ', ' }}">{% endif %}
     {% if site.google_verification %}
