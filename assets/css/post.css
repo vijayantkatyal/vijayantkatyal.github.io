@@ -145,7 +145,7 @@ body {
 }
 
 .post .post-title a {
-	color: #50585d;
+	color: #297db1;
 	transition: color 300ms ease-in-out;
 }
 
@@ -189,10 +189,7 @@ body {
 	margin-right: 5px;
 }
 
-.share .fa-twitter {
-	color: #1da1f2;
-}
-
-.share .fa-envelope {
-	color: #673AB7;
+div[itemprop="articleBody"] a {
+	color: #2196F3;
+	text-decoration: none;
 }
