@@ -31,6 +31,7 @@ first i installed [docker](https://www.docker.com/).
 
 * download [Kitematic](https://github.com/docker/kitematic/releases)<br>
 * install this image [starefosson/github-pages](https://store.docker.com/community/images/starefossen/github-pages)<br>
+* mount hard drive (e.g. C:/ where your repo exists) from docker settings -> Shared Drives and select the drive and apply. (*tip: use full username e.g. WORKGROUP/Name of User*)
 * now go to your blog repository and run (in powershell): <br>
 
 ~~~ powershell
