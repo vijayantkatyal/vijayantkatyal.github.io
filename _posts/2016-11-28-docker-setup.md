@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      Docker Setup on windows
-summary:    docker Setup on windows and common installation issues.
+title:      Jekyll on windows using docker
+summary:    managing github pages(jekyll) based blog using docker Setup on windows and common installation issues.
 categories: docker
 ---
 
