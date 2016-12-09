@@ -8,6 +8,8 @@ date_format: "%b %-d, %Y"
 email: hello@vijayantkatyal.com
 bio: Web Developer
 
+future: true
+
 # blog settings
 permalink: /blog/:title.html
 atom_path: /blog/atom.xml
