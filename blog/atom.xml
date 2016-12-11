@@ -23,6 +23,9 @@ title: Vijayant Katyal Blog Atom Feed
     <updated>{{ post.date | date_to_xmlschema }}</updated>
     <id>{{ site.url }}{{ post.id }}</id>
     <content type="html">{{ post.summary | xml_escape }}</content>
+    <author>
+      <name>{{ site.author }}</name>
+    </author>
   </entry>
   {% endfor %}
 </feed>
