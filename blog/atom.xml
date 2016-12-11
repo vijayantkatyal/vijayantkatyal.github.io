@@ -2,14 +2,15 @@
 title: Vijayant Katyal Blog Atom Feed
 ---
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
 
   <title>Vijayant Katyal's Blog</title>
   <subtitle>Vijayant Katyal thoughts on life and web development</subtitle>
   <link href="{{ site.url }}{{ site.atom_path }}" rel="self"/>
   <link href="{{ site.url }}"/>
   <updated>{{ site.time | date_to_xmlschema }}</updated>
-  <id>{{ site.url }}/</id>
+  <id>{{ site.url }}/blog/atom.xml</id>
+  <icon>{{ site.url }}/icon.png</icon>
   <author>
     <name>{{ site.author }}</name>
   </author>
@@ -18,6 +19,7 @@ title: Vijayant Katyal Blog Atom Feed
   <entry>
     <title>{{ post.title }}</title>
     <link href="{{ site.url }}{{ post.url }}"/>
+    <published>{{ post.date | date_to_xmlschema }}</published>
     <updated>{{ post.date | date_to_xmlschema }}</updated>
     <id>{{ site.url }}{{ post.id }}</id>
     <content type="html">{{ post.summary | xml_escape }}</content>
