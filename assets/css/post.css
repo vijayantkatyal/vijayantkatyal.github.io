@@ -187,8 +187,14 @@ body {
 .share a {
 	font-size: 20px;
 	margin-right: 5px;
+	color: #55595c !important;
+}
+
+.share a:hover{
+	color: #2196F3 !important;
 }
 
 div[itemprop="articleBody"] a {
 	text-decoration: none;
+	color: #2196F3;
 }
