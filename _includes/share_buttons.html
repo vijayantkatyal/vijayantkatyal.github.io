@@ -8,12 +8,11 @@
 	<div class="col-xs-4 text-xs-right">
 		<h6>{{ site.text.share_buttons.text }}</h6>
 		<div>
-			<a href="mailto:?subject=Check this out&body={{ site.url }}{{ page.url }}" title="Send Email">
-				<i class="fa fa-envelope"></i>
-			</a>
+			<a class="fa fa-envelope" href="mailto:?subject=Check this out&body={{ site.url }}{{ page.url }}" title="Send Email"></a>
 			{% if site.share_twitter %}
 			<a class="fa fa-twitter" href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Post on Twitter"></a>
 			{% endif %}
+			<a class="fa fa-reddit" href="//www.reddit.com/submit" onclick="window.location = '//www.reddit.com/submit?url=' + encodeURIComponent(window.location); return false" title="Post on Reddit"></a>
 		</div>
 	</div>
 </div>
