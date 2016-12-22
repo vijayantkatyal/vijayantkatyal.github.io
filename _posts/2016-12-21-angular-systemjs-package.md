@@ -25,7 +25,29 @@ package.json
 
 * run npm install (to install these new packages)
 
-* create Gruntfile.js into root of your app.
+* create build.config.js file in root of your app. (this tells systemjs builder which package to include in bundle file)
+
+build.config.js
+{: .code_title}
+~~~ js
+System.config({
+    meta:{
+        '@angular/*':{
+            build: false
+        },
+        'rxjs/*': {
+            build: false
+        }
+    },
+    paths:{
+        "dist/*": "./dist/*.js"
+    }
+});
+~~~
+
+<br>
+
+* create Gruntfile.js in root of your app.
 
 Gruntfile.js
 {: .code_title}
