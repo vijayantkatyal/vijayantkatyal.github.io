@@ -10,7 +10,7 @@ body {
 }
 
 .navbar-toggler::before {
-	display: inline-block;
+	display: inline;
 	font-size: inherit;
 	text-rendering: auto;
 	-webkit-font-smoothing: antialiased;
