@@ -144,11 +144,12 @@ body {
 	font-family: 'Open Sans',sans-serif;
 }
 
+a.default-color,
 .post .post-title a {
 	color: #297db1;
 	transition: color 300ms ease-in-out;
 }
-
+a.default-color:hove,
 .post .post-title a:hover {
 	color: #2196F3;
 }
