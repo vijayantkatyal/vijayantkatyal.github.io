@@ -144,12 +144,11 @@ body {
 	font-family: 'Open Sans',sans-serif;
 }
 
-a.default-color,
 .post .post-title a {
 	color: #297db1;
 	transition: color 300ms ease-in-out;
 }
-a.default-color:hove,
+
 .post .post-title a:hover {
 	color: #2196F3;
 }
@@ -195,7 +194,7 @@ a.default-color:hove,
 	color: #2196F3 !important;
 }
 
-div[itemprop="articleBody"] a:not(.btn) {
+/*div[itemprop="articleBody"] a:not(.btn) {
 	text-decoration: none;
 	color: #2196F3;
-}
+}*/

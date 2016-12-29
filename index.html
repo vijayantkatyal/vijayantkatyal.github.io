@@ -55,33 +55,33 @@ meta_description: Vijayant Katyal is a full stack web developer helping make the
 				<h4 class="text-xs-center" itemprop="name">Vijayant Katyal</h4>
 				<div class="index_contact">
 					{% if site.email %}
-					<a href="mailto:{{ site.email }}?subject=Hi, Vijayant Katyal&body=visitor from {{ site.url }}{{ page.url }}">
+					<a href="mailto:{{ site.email }}?subject=Hi, Vijayant Katyal&body=visitor from {{ site.url }}{{ page.url }}" title="Mail Address">
 						<i class="fa fa-envelope"></i>
 					</a>
 					{% endif %}
 					{% if site.twitter_username %}
-					<a href="https://twitter.com/{{ site.twitter_username }}" target="_new">
+					<a href="https://twitter.com/{{ site.twitter_username }}" title="Twitter Profile" target="_blank">
 						<i class="fa fa-twitter"></i>
 					</a>
 					{% endif %}
 					{% if site.github_username %}
-					<a href="https://github.com/{{ site.github_username }}" target="_new">
+					<a href="https://github.com/{{ site.github_username }}" title="Github Profile" target="_blank">
 						<i class="fa fa-github"></i>
 					</a>
 					{% endif %}
 					{% if site.stackoverflow_id %}
-					<a href="https://stackoverflow.com/users/{{ site.stackoverflow_id }}" target="_new">
+					<a href="http://stackoverflow.com/cv/vijayantkatyal" title="CV" target="_blank">
 						<i class="fa fa-stack-overflow"></i>
 					</a>
 					{% endif %}
-					<a href="/blog/atom.xml" target="_new">
+					<a href="/blog/atom.xml" target="_blank" title="Blog feed">
 						<i class="fa fa-feed"></i>
 					</a>
 				</div>
 			</div>
 			<div class="col-sm-7">
 				<p class="lead text-xs-right">
-					I am a <a class="index_link" itemprop="jobTitle" href="http://stackoverflow.com/cv/vijayantkatyal" target="_new">full stack web developer</a> from <span itemprop="homeLocation">india</span>, helping make the world a better place through my work.
+					I am a <a class="index_link" itemprop="jobTitle" href="http://stackoverflow.com/cv/vijayantkatyal" target="_blank">full stack web developer</a> from <span itemprop="homeLocation">india</span>, helping make the world a better place through my work.
 					<br><br>
 					I am an open-source <a class="index_link" href="https://github.com/{{ site.github_username }}">contributor</a> and I like making things that help people with their work.
 					I am the author of <a class="index_link" itemprop="owns" href="/svg-bits">SVG bits</a>.

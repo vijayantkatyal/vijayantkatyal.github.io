@@ -2,11 +2,13 @@ body {
 	padding-top: 20px;
 }
 
-a {
+.index_contact a,
+.header_contact_links a{
 	color:#55595c;
 	transition: color 300ms ease-in-out;
 }
-a:hover {
+.index_contact a:hover,
+.header_contact_links a:hover {
 	color: #2196F3;
 	text-decoration: none;
 }
@@ -50,6 +52,11 @@ blockquote{
 
 .index_link {
 	border-bottom: 1px dashed #8c8c8c;
+}
+
+a.index_link:hover{
+	text-decoration: none;
+	border-bottom-style: solid;
 }
 
 .index_contact {
