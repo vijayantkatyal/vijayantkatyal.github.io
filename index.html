@@ -1,7 +1,8 @@
 ---
 layout: compress
 meta_description: Vijayant Katyal is a full stack web developer helping make the world a better place through his work. 
-title: Vijayant Katyal thoughts on life and development
+title: Vijayant Katyal's Blog
+summary: Vijayant Katyal thoughts on life and development
 ---
 <!DOCTYPE html>
 <html>
@@ -25,6 +26,7 @@ title: Vijayant Katyal thoughts on life and development
     <meta name="twitter:card" content="summary" />
 	<meta name="twitter:image:src" content="https://vijayantkatyal.com/assets/images/me.jpg">
     {% if site.twitter_username %}
+	<meta name="twitter:creator" content="@{{ site.twitter_username }}">
     <meta name="twitter:site" content="@{{ site.twitter_username }}" />
     {% endif %}
     <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
