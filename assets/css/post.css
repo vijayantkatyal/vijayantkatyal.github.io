@@ -3,10 +3,32 @@ body {
 	padding-top: 0px;
 }
 
-.navbar-toggler {
+.navbar-toggler,
+.global-search {
 	position: relative;
 	top: 10px;
 	color: #ccc;
+	cursor: pointer;
+}
+
+.global-search {
+	padding: .7rem .75rem;
+	line-height: 1;
+	font-size: 1.25rem;
+	height: 2em;
+	background-size: 24px 24px;
+}
+
+.global-search:hover,
+.global-search:focus {
+	text-decoration: none;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:hover
+{
+	outline: none;
+	color: #2196F3;
 }
 
 .navbar-toggler::before {
