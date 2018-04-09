@@ -37,6 +37,7 @@ disqus_shortname: vijayantkatyal
 github_username: vijayantkatyal
 stackoverflow_id: 1389973
 twitter_username: vijayantkatyal
+linkedin_username: vijayantkatyal
 
 # Post sharing icons
 show_sharing_icons: true
@@ -80,7 +81,7 @@ redcarpet:
   extensions: ['smart', 'tables', 'with_toc_data']
 # permalink:    /:title/
 paginate:     6
-gems:
+plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jemoji

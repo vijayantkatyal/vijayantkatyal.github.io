@@ -11,80 +11,108 @@ summary: Vijayant Katyal thoughts on life and development
 	<meta name="theme-color" content="#000000"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
-    {% if page.meta_robots %}<meta name="robots" content="{{ page.meta_robots }}">
-    {% else %}<meta name="robots" content="all">{% endif %}
-    <meta name="author" content="{{ site.author }}">
+	
+	{% if page.meta_robots %}
+		<meta name="robots" content="{{ page.meta_robots }}">
+	{% else %}
+		<meta name="robots" content="all">
+	{% endif %}
+	
+	<meta name="author" content="{{ site.author }}">
 	<link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Vijayant Katyal">
     <meta name="description" content="{% if page.meta_description %}{{ page.meta_description | xml_escape }}{% elsif page.summary %}{{ page.summary | xml_escape }}{% else %}{{ site.description | xml_escape }}{% endif %}">
-    {% if page.categories %}<meta name="keywords" content="{{ page.categories | join: ', ' }}">{% endif %}
-    {% if site.google_verification %}
-    <meta name="google-site-verification" content="{{ site.google_verification }}" />
+	
+	{% if page.categories %}
+		<meta name="keywords" content="{{ page.categories | join: ', ' }}">
+	{% endif %}
+	
+	{% if site.google_verification %}
+    	<meta name="google-site-verification" content="{{ site.google_verification }}" />
     {% endif %}
-    {% if site.bing_verification %}
-    <meta name="msvalidate.01" content="{{ site.bing_verification }}" />
-    {% endif %}
+	
+	{% if site.bing_verification %}
+    	<meta name="msvalidate.01" content="{{ site.bing_verification }}" />
+	{% endif %}
+	
     <meta name="twitter:card" content="summary" />
 	<meta name="twitter:image:src" content="https://vijayantkatyal.com/assets/images/me.jpg">
-    {% if site.twitter_username %}
-	<meta name="twitter:creator" content="@{{ site.twitter_username }}">
-    <meta name="twitter:site" content="@{{ site.twitter_username }}" />
-    {% endif %}
+	
+	{% if site.twitter_username %}
+		<meta name="twitter:creator" content="@{{ site.twitter_username }}">
+    	<meta name="twitter:site" content="@{{ site.twitter_username }}" />
+	{% endif %}
+	
     <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
     <meta name="twitter:description" content="{% if page.summary %}{{ page.summary }}{% else %}{{ site.description }}{% endif %}" />
     <meta name="twitter:url" content="{{ site.url }}{{ page.url }}" />
     
-    <title>{% if page.title %}{{ page.title | strip_html }} &#8211; {% endif %}{{ site.title | strip_html }}</title>
+    <title>
+		{% if page.title %}
+			{{ page.title | strip_html }} &#8211;
+		{% endif %}
+		{{ site.title | strip_html }}
+	</title>
     
 	<link rel="me" type="text/html" href="http://github.com/vijayantkatyal"/> 
 	<link rel="me" type="text/html" href="https://vijayantkatyal.com/blog/atom.xml"/> 
 	<link rel="me" type="text/html" href="http://twitter.com/vijayantkatyal"/> 
 
     <link rel="icon" type="image/png" sizes="16x16" href="/icon.png">
-    <link rel="dns-prefetch" href="//maxcdn.bootstrapcdn.com">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" crossorigin="anonymous">
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" crossorigin="anonymous">
-	<link rel="stylesheet" href="/assets/css/style.css">
-	<link rel="stylesheet" href="/assets/css/post.css">
-    <link href="/blog/atom.xml" type="application/atom+xml" rel="alternate" title="Vijayant Katyal's Blog">
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+	
+	<link rel="dns-prefetch" href="//maxcdn.bootstrapcdn.com">
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous"/>
+	
+	<link rel="stylesheet" href="/assets/css/style.css"/>
+	<link rel="stylesheet" href="/assets/css/post.css"/>
+
+	<link href="/blog/atom.xml" type="application/atom+xml" rel="alternate" title="Vijayant Katyal's Blog">
+	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+	
 </head>
 <body>
     <br><br>
     <div class="container" itemscope itemtype="http://schema.org/Person">
-        <div class="row-fluid">
-			<div class="col-sm-5">
+        <div class="row">
+			<div class="col col-lg-5 col-md-5">
 				<br>
 				<img src="/assets/images/me.jpg" itemprop="image" class="img-fluid rounded-circle" alt="">
 				<br><br>
-				<h4 class="text-xs-center" itemprop="name">Vijayant Katyal</h4>
+				<h4 class="text-center" itemprop="name">Vijayant Katyal</h4>
 				<div class="index_contact">
 					{% if site.email %}
-					<a href="mailto:{{ site.email }}?subject=Hi, Vijayant Katyal&body=visitor from {{ site.url }}{{ page.url }}" title="Mail Address">
-						<i class="fa fa-envelope"></i>
-					</a>
+						<a href="mailto:{{ site.email }}?subject=Hi, Vijayant Katyal&body=visitor from {{ site.url }}{{ page.url }}" title="Mail Address">
+							<i class="fa fa-envelope"></i>
+						</a>
+					{% endif %}
+					{% if site.linkedin_username %}
+						<a href="https://linkedin.com/in/{{ site.linkedin_username }}" title="Linked In" target="_blank">
+							<i class="fab fa-linkedin"></i>
+						</a>
 					{% endif %}
 					{% if site.twitter_username %}
-					<a href="https://twitter.com/{{ site.twitter_username }}" title="Twitter Profile" target="_blank">
-						<i class="fa fa-twitter"></i>
-					</a>
+						<a href="https://twitter.com/{{ site.twitter_username }}" title="Twitter Profile" target="_blank">
+							<i class="fab fa-twitter"></i>
+						</a>
 					{% endif %}
 					{% if site.github_username %}
-					<a href="https://github.com/{{ site.github_username }}" title="Github Profile" target="_blank">
-						<i class="fa fa-github"></i>
-					</a>
+						<a href="https://github.com/{{ site.github_username }}" title="Github Profile" target="_blank">
+							<i class="fab fa-github"></i>
+						</a>
 					{% endif %}
 					{% if site.stackoverflow_id %}
-					<a href="http://stackoverflow.com/story/vijayantkatyal" title="CV" target="_blank">
-						<i class="fa fa-stack-overflow"></i>
-					</a>
+						<a href="http://stackoverflow.com/story/vijayantkatyal" title="CV" target="_blank">
+							<i class="fab fa-stack-overflow"></i>
+						</a>
 					{% endif %}
 					<a href="/blog/atom.xml" target="_blank" title="Blog feed">
-						<i class="fa fa-feed"></i>
+						<i class="fas fa-rss-square"></i>
 					</a>
 				</div>
 			</div>
-			<div class="col-sm-7">
-				<p class="lead text-xs-right">
+			<div class="col col-lg-7 col-md-7">
+				<p class="lead text-right">
 					I am a <a class="index_link" title="CV" itemprop="jobTitle" href="http://stackoverflow.com/story/vijayantkatyal" target="_blank">full stack web developer</a> from <span itemprop="homeLocation">india</span>, helping make the world a better place through my work.
 					<br><br>
 					I am an open-source <a class="index_link" href="https://github.com/{{ site.github_username }}" title="GitHub Profile">contributor</a> and I like making things that help people with their work.
