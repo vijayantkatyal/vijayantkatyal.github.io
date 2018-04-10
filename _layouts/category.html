@@ -14,13 +14,17 @@ layout: post_container
 		<p>{{ page.content }}</p>
 	{% endunless %}
 
-	{% unless site.categories.[page.category] | size > 0 %}
+	{% assign category_size = site.categories[page.category] | size %}
+	{% if category_size == 0 %}
 		<br><br>
-		<p class="text-warning text-xs-center">No posts in this category at this time.</p>
-	{% endunless %}
+		<h3 class="text-warning text-xs-center">No posts in this category at this time.</h3>
+		<br><br><br>
+		<br><br><br>
+		<br><br><br>
+	{% endif %}
 
 	<div class="posts">
-		{% for post in site.categories.[page.category] %}
+		{% for post in site.categories[page.category] %}
 			<article class="post">
 				<header class="post-header">
 					<span class="post-meta">
