@@ -2,6 +2,10 @@ body {
 	padding-top: 20px;
 }
 
+.header_contact_links{
+	clear: both;
+}
+
 .index_contact a,
 .header_contact_links a{
 	color:#55595c;
@@ -77,9 +81,26 @@ body.error_page {
 	background-color: #373a3c;
 }
 
-body.error_page #navbar-header {
+/* body.error_page #navbar-header {
 	background-color: #fff;
+} */
+
+/* #navbar-header{
+	color: #cccccc!important;
+} */
+
+#navbar-header a{
+	color: #cccccc !important;
 }
+
+#navbar-header a:hover{
+	color: #65bbe5 !important;
+	text-decoration: none !important;
+}
+
+/* #navbar-header #menu a{
+	border-bottom: 1px dashed #8c8c8c;
+} */
 
 body.error_page div.container {
 	color: #fff;

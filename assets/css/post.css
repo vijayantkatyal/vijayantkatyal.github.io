@@ -32,7 +32,7 @@ body {
 	color: #2196F3;
 }
 
-.navbar-toggler::before {
+/* .navbar-toggler::before {
 	display: inline;
 	font-size: inherit;
 	text-rendering: auto;
@@ -43,7 +43,7 @@ body {
 
 .navbar-toggler[aria-expanded='true']::before {
 	content: "\f00d";
-}
+} */
 
 .navbar-toggler::after {
 	padding-left: 10px;
