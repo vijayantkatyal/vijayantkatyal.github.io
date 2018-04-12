@@ -14,7 +14,7 @@ layout: post_container
 			<span itemprop="datePublished">{{ page.date | date: site.date_format }}</span> {% if page.update_date %} | <span class="text-success">{{ site.text.post.updated }}: {{ page.update_date | date: site.date_format }}</span> {% endif %} {% if page.comments != false %} | <a href="{{ page.url | prepend: site.baseurl }}#disqus_thread" data-discuss-identifier="{{ page.id }}">0 Comments</a> {% endif %}
 			<br>
 			{% for category in page.categories %}
-				<a class="tag tag-default" itemprop="keywords" href="/blog/category/{{ category }}">{{ category }}</a>
+				<a class="badge badge-secondary" itemprop="keywords" href="/blog/category/{{ category }}">{{ category }}</a>
 			{% endfor %}
 		</p>
 	</div>

@@ -4,7 +4,7 @@ layout: post_container
 <div class="jumbotron jumbotron-fluid">
 	<div class="container">
 		<h1 class="display-4 jumbotron-heading">
-			<span class="tag tag-default">{{ page.title }}</span>
+			<span class="badge badge-secondary">{{ page.title }}</span>
 		</h1>
 	</div>
 </div>
@@ -31,7 +31,7 @@ layout: post_container
 						<time datetime="{{ post.date | date: site.date_format }}">{{ post.date | date: site.date_format }}</time> {% if post.comments != false %} | <a href="{{ post.url | prepend: site.baseurl }}#disqus_thread" data-discuss-identifier="{{ post.id }}">0 Comments</a> {% endif %}
 						<div class="post-tags">
 							{% for category in post.categories %}
-								<a class="tag tag-default" href="/blog/category/{{ category }}">{{ category }}</a>
+								<a class="badge badge-secondary" href="/blog/category/{{ category }}">{{ category }}</a>
 							{% endfor %}				
 						</div>
 					<h2 class="post-title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
