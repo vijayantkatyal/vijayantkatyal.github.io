@@ -1,70 +1,4 @@
-.highlight  { 
-	background: #ffffff;
-	overflow: auto;
-	word-wrap: normal;
-	background-color: #fff;
-	border: 1px solid #ddd;
-	border-radius: 2px 2px 0 0;
-	margin-bottom: 0px;
-}
-
-.lineno-container > figure > pre {
-	padding: 0px;
-}
-
-.highlight pre.lineno {
-	border: none;
-	opacity: 0.6;
-	filter: alpha(opacity=60);
-}
-.highlight .lineno {
-	-webkit-touch-callout: none;
-	-webkit-user-select: none;
-	-khtml-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-}
-.highlight .gutter {
-	border-right: 1px solid #ccc;
-	min-width: inherit;
-	padding: 1px 15px !important;
-	background: #f7f7f7;
-	width: 1%;
-	font-size: 12px;
-	line-height: 20px;
-	text-align: right;
-	white-space: nowrap;
-	vertical-align: top;
-	cursor: pointer;
-	user-select: none;
-	border: solid #eee;
-	border-width: 0 1px 0 0;
-	font-weight: normal;
-}
-.highlight .code {
-	padding: 1px 10px !important;
-	text-align: left;
-	background: transparent;
-	border: 0;
-	overflow: visible;
-	font-size: 12px;
-	color: #333;
-	word-wrap: normal;
-	white-space: pre;
-	position: relative;
-	line-height: 20px;
-	vertical-align: top;
-	border-collapse: collapse;
-	font-weight: normal;
-}
-.highlight pre pre {
-	border: none;
-	margin-bottom: 0px;
-}
-
-
-
+.highlight  { background: #ffffff; }
 .highlight .c { color: #999988; font-style: italic } /* Comment */
 .highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */
 .highlight .k { font-weight: bold } /* Keyword */
@@ -125,38 +59,20 @@
 .highlight .vi { color: #008080 } /* Name.Variable.Instance */
 .highlight .il { color: #009999 } /* Literal.Number.Integer.Long */
 
-/* .code_title::before {
-	display: inline-block;
-	font-size: inherit;
-	text-rendering: auto;
-	-webkit-font-smoothing: antialiased;
-	content: "\f121";
-	font:15px/1 FontAwesome;
-	padding-left: 10px;
-	padding-right: 20px;
-	color: #de455b;
-} */
-
-.code_title {
-	background-color: #f7f7f7;
-	border: 1px solid #ddd;
-	margin-top: 40px;
-	margin-bottom: 0px;
-	border-bottom: 0px;
-	padding: 10px;
-	color: #de455b;
-	font-weight: 500; 
+.lineno-container > figure > pre {
+	padding: 0px;
 }
 
-/* .code_title::after {
-	display: inline-block;
-	font-size: inherit;
-	text-rendering: auto;
-	-webkit-font-smoothing: antialiased;
-	content: "\f0c5";
-	font:15px/1 FontAwesome;
-	float: right;
-	color: #000;
-	cursor: pointer;
-	margin-top: 6px; 
-} */
+.highlight pre.lineno {
+	border: none;
+	opacity: 0.6;
+	filter: alpha(opacity=60);
+}
+.highlight .lineno {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
