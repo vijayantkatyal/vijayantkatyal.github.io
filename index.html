@@ -62,13 +62,19 @@ summary: Vijayant Katyal thoughts on life and development
 	<link rel="dns-prefetch" href="//maxcdn.bootstrapcdn.com">
 	
 	<link rel="stylesheet" href="/assets/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous"/>
-	
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 	<link rel="stylesheet" href="/assets/css/style.css"/>
 	<link rel="stylesheet" href="/assets/css/post.css"/>
 
 	<link href="/blog/atom.xml" type="application/atom+xml" rel="alternate" title="Vijayant Katyal's Blog">
 	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+
+	<style>
+	
+		#author_dp{
+			border-radius: 10px !important;
+		}
+	</style>
 	
 </head>
 <body>
@@ -76,19 +82,13 @@ summary: Vijayant Katyal thoughts on life and development
     <div class="container" itemscope itemtype="http://schema.org/Person">
         <div class="row">
 			<div class="col col-lg-5 col-md-5">
-				<br>
-				<img src="/assets/images/me.jpg" itemprop="image" class="img-fluid rounded-circle" alt="">
+				<img id="author_dp" src="/assets/images/me/current.JPG" itemprop="image" class="img-fluid rounded-circle" alt="">
 				<br><br>
 				<h4 class="text-center" itemprop="name">Vijayant Katyal</h4>
 				<div class="index_contact">
 					{% if site.email %}
 						<a href="mailto:{{ site.email }}?subject=Hi, Vijayant Katyal&body=visitor from {{ site.url }}{{ page.url }}" title="Mail Address">
 							<i class="fa fa-envelope"></i>
-						</a>
-					{% endif %}
-					{% if site.linkedin_username %}
-						<a href="https://linkedin.com/in/{{ site.linkedin_username }}" title="Linked In" target="_blank">
-							<i class="fab fa-linkedin"></i>
 						</a>
 					{% endif %}
 					{% if site.twitter_username %}
@@ -118,7 +118,7 @@ summary: Vijayant Katyal thoughts on life and development
 					I am an open-source <a class="index_link" href="https://github.com/{{ site.github_username }}" title="GitHub Profile">contributor</a> and I like making things that help people with their work.
 					I am the author of <a class="index_link" itemprop="owns" href="/svg-bits" title="cross platform desktop app, which make it easy to work with svg (icons) ">SVG bits</a>.
 					<br><br>
-					Also I frequently <a class="index_link" itemprop="owns" title="Blog" href="/blog">Blog</a> about web development.
+					Also I frequently <a class="index_link" itemprop="owns" title="Blog" href="/blog">Blog</a> about life and development.
 					<br><br>
 					recent posts:
 					<br>
@@ -132,7 +132,7 @@ summary: Vijayant Katyal thoughts on life and development
     </div>
 	<script src="/assets/js/ga.js"></script>
 	<script src="/assets/js/jquery.min.js"></script>
-	<script src="/assets/js/tether.min.js"></script>
+	<script src="/assets/js/popper.min.js"></script>
 	<script src="/assets/js/boostrap.min.js"></script>
 </body>
 </html>
