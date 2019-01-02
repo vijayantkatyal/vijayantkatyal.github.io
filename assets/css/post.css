@@ -15,6 +15,10 @@ body {
 	margin-left: -1em; 
 }
 
+.container[itemprop="articleBody"] ul li p{
+	display: inline;
+}
+
 .navbar-toggler,
 .global-search {
 	position: relative;
