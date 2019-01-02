@@ -21,7 +21,7 @@ layout: compress
     
     <link rel="icon" type="image/png" sizes="16x16" href="/icon.png">
     <link rel="dns-prefetch" href="//maxcdn.bootstrapcdn.com">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" crossorigin="anonymous">
+	<link rel="stylesheet" href="/assets/css/bootstrap.min.css"/>
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" crossorigin="anonymous">
 	<link rel="stylesheet" href="/assets/css/style.css">
 	
@@ -40,19 +40,40 @@ layout: compress
 	</script>
 </head>
 <body>
-	<br><br>
 	<div class="container">
-		<gcse:searchbox></gcse:searchbox>
-		<gcse:searchresults></gcse:searchresults>
+		<br><br>
+		<h1>Search <a href="/" itemprop="name">Vijayant Katyal</a> Blog</h1>
+		<hr>
+		<div class="container">
+			<gcse:searchbox></gcse:searchbox>
+			<gcse:searchresults></gcse:searchresults>
+		</div>
+		<br><br>
+
+		<h2>All Categories</h2>
+
+		{% assign categories_list = site.categories %}
+		{% if categories_list.first[0] == null %}
+			{% for category in categories_list %}
+				<a itemprop="keywords" href="/blog/category/{{ category }}" class="badge badge-secondary">{{ category }}</a>
+			{% endfor %}
+		{% else %}
+			{% for category in categories_list %}
+				<a itemprop="keywords" href="/blog/category/{{ category[0] }}" class="badge badge-secondary">{{ category[0] }}</a>
+			{% endfor %}
+		{% endif %}
+		{% assign categories_list = nil %}
+		<br><br>
+		<hr>
+		<footer class="footer">
+			<div itemscope itemtype="http://schema.org/Person">
+				All content copyright
+				<a href="/" itemprop="name">
+					<u>Vijayant Katyal</u>
+				</a> &copy; 2019 • All rights reserved.
+			</div>
+		</footer>
 	</div>
-	<footer class="footer">
-	<div class="container" itemscope itemtype="http://schema.org/Person">
-		All content copyright
-		<a href="/" itemprop="name">
-			<u>Vijayant Katyal</u>
-		</a> &copy; 2018 • All rights reserved.<br> Proudly published with GitHub Pages
-	</div>
-</footer>
 	<script type="text/javascript" src="/assets/js/ga.js"></script>
 </body>
 </html>
