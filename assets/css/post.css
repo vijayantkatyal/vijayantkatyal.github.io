@@ -196,6 +196,7 @@ body.dark{
 .post .post-title a {
 	color: #297db1;
 	transition: color 300ms ease-in-out;
+	word-break: keep-all;
 }
 
 .post .post-title a:hover {
