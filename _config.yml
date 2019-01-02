@@ -56,7 +56,12 @@ jekyll-mentions: https://twitter.com
 
 # Build settings
 markdown: kramdown
-highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter_opts:
+      block:
+          line_numbers: true
+
 redcarpet:
   extensions: ['smart', 'tables', 'with_toc_data']
 # permalink:    /:title/

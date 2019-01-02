@@ -26,14 +26,14 @@
 	-ms-user-select: none;
 	user-select: none;
 }
-.highlight .gutter {
+.highlight .rouge-gutter {
 	border-right: 1px solid #ccc;
 	min-width: inherit;
-	padding: 1px 15px !important;
+	padding-right: 15px !important;
 	background: #f7f7f7;
 	width: 1%;
-	font-size: 12px;
-	line-height: 20px;
+	font-size: 14px;
+	line-height: 18px;
 	text-align: right;
 	white-space: nowrap;
 	vertical-align: top;
@@ -43,18 +43,18 @@
 	border-width: 0 1px 0 0;
 	font-weight: normal;
 }
-.highlight .code {
+.highlight .rouge-code {
 	padding: 1px 10px !important;
 	text-align: left;
 	background: transparent;
 	border: 0;
 	overflow: visible;
-	font-size: 12px;
+	font-size: 14px;
 	color: #333;
 	word-wrap: normal;
 	white-space: pre;
 	position: relative;
-	line-height: 20px;
+	line-height: 18px;
 	vertical-align: top;
 	border-collapse: collapse;
 	font-weight: normal;
