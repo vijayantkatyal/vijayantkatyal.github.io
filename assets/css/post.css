@@ -2,6 +2,12 @@ body {
 	padding-top: 0px;
 }
 
+body.dark{
+	transition: all 900ms ease-in-out;
+	background-color: #373a3c;
+	color: #fff;
+}
+
 .container[itemprop="articleBody"] ul{
 	list-style: none;
 }
