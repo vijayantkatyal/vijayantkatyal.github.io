@@ -27,6 +27,15 @@ layout: compress
 	
     <link href="/blog/atom.xml" type="application/atom+xml" rel="alternate" title="Vijayant Katyal's Blog">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+	
+	<style>
+		.badge{
+			padding: 0.7em .6em;
+			font-size: 100%;
+			margin-top: 10px;
+		}
+	</style>
+	
 	<script>
 		(function() {
 			var cx = '003449161591737793502:_drki_ovua8';
@@ -51,6 +60,7 @@ layout: compress
 		<br><br>
 
 		<h2>All Categories</h2>
+		<br>
 
 		{% assign categories_list = site.categories %}
 		{% if categories_list.first[0] == null %}
