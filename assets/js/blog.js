@@ -1,3 +1,5 @@
+mediumZoom('img')
+
 // $("img").hover(
 // 	function(){
 // 		$("body").addClass("dark");
