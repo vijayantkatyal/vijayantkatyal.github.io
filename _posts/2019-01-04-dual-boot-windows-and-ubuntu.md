@@ -31,8 +31,11 @@ on windows i enjoy using apps like Adobe XD, Adobe Illustrator for design part /
 #### Steps to create bootable pen drives (Ubuntu or Windows 10)
 
 * open Rufus 
-
-![rufus_en](/assets/images/posts/rufus_en-1546696116040.png)
+ <br>
+ <br>
+ ![rufus_en](/assets/images/posts/rufus_en-1546696116040.png)
+ <br>
+ <br>
 
 * Select attached USB pen drive as Device.
 
@@ -57,8 +60,9 @@ on windows i enjoy using apps like Adobe XD, Adobe Illustrator for design part /
 * select **Install Ubuntu**
 
 * ignore updates
-
-![1_9sGCulW4tcIb_DVCKe6Jnw](/assets/images/posts/1_9sGCulW4tcIb_DVCKe6Jnw.png)
+ <br><br>
+ ![1_9sGCulW4tcIb_DVCKe6Jnw](/assets/images/posts/1_9sGCulW4tcIb_DVCKe6Jnw.png)
+ <br><br>
 
 * select **something else**
 
