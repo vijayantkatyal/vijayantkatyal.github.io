@@ -257,9 +257,14 @@ body {
 
 .share a:hover{
 	color: #2196F3 !important;
+	text-decoration: none;
 }
 
 /*div[itemprop="articleBody"] a:not(.btn) {
 	text-decoration: none;
 	color: #2196F3;
 }*/
+
+.medium-zoom-image{
+	width: 100%;
+}
