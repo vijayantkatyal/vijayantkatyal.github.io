@@ -25,8 +25,8 @@ window.cookieconsent.initialise({
 		policy: 'Cookie Policy',
 		target: '_blank',
 	  },
-    law: {
-      regionalLaw: false,
-    },
-    location: true,
+    // law: {
+    //   regionalLaw: false,
+    // },
+    // location: true,
   });
