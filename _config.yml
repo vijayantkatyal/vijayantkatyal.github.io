@@ -5,7 +5,7 @@ description: "Vijayant Katyal's Blog"
 baseurl:     ""
 url:         "https://vijayantkatyal.com"
 date_format: "%b %-d, %Y"
-email: vijayantkatyal@hotmail.com
+email: hello@vijayantkatyal.com
 bio: Full Stack Web Developer
 
 # blog settings
