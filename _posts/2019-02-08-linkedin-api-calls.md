@@ -81,8 +81,8 @@ function (req, res) {
 });
 ~~~
 
+<br><br>
 now you have access token saved in **req.session.accesstoken** variable.
-
 
 
 #### Using Access Token to make REST API Calls for data
@@ -116,9 +116,7 @@ app.get('/companies', function (req, res) {
     }
 });
 ~~~
-
-
-
+<br><br>
 **get company info by id**
 
 index.js
@@ -138,9 +136,7 @@ app.get('/company/:id', function(req,res){
     }
 })
 ~~~
-
-
-
+<br><br>
 i hope this helps you in creating an linked in app and using it to access data via REST API calls.
 
 let me know in the comments if you need some help.
