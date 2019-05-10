@@ -118,10 +118,14 @@ body {
 
 @media (min-width: 1200px){
 	.article-content p,
+	.article-content ul,
+	.article-content figure,
 	.article-content h1,
 	.article-content h2,
 	.article-content h3,
 	.article-content h4,
+	.article-content h5,
+	.article-content hr,
 	.article-content img,
 	.article-content .highlighter-rouge div.highlight pre.highlight
 	{
@@ -131,10 +135,14 @@ body {
 
 @media (min-width: 992px){
 	.article-content p,
+	.article-content ul,
+	.article-content figure,
 	.article-content h1,
 	.article-content h2,
 	.article-content h3,
 	.article-content h4,
+	.article-content h5,
+	.article-content hr,
 	.article-content img,
 	.article-content .highlighter-rouge div.highlight pre.highlight
 	{
@@ -144,10 +152,14 @@ body {
 
 @media (min-width: 768px){
 	.article-content p,
+	.article-content ul,
+	.article-content figure,
 	.article-content h1,
 	.article-content h2,
 	.article-content h3,
 	.article-content h4,
+	.article-content h5,
+	.article-content hr,
 	.article-content img,
 	.article-content .highlighter-rouge div.highlight pre.highlight
 	{
@@ -157,10 +169,14 @@ body {
 
 @media (min-width: 576px){
 	.article-content p,
+	.article-content ul,
+	.article-content figure,
 	.article-content h1,
 	.article-content h2,
 	.article-content h3,
 	.article-content h4,
+	.article-content h5,
+	.article-content hr,
 	.article-content img,
 	.article-content .highlighter-rouge div.highlight pre.highlight
 	{
@@ -169,10 +185,14 @@ body {
 }
 
 .article-content p,
+.article-content ul,
+.article-content figure,
 .article-content h1,
 .article-content h2,
 .article-content h3,
 .article-content h4,
+.article-content h5,
+.article-content hr,
 .article-content img,
 .article-content .highlighter-rouge div.highlight pre.highlight
 {
@@ -185,10 +205,14 @@ body {
 
 @media (min-width: 48em){
 	.article-content p,
+	.article-content ul,
+	.article-content figure,
 	.article-content h1,
 	.article-content h2,
 	.article-content h3,
 	.article-content h4,
+	.article-content h5,
+	.article-content hr,
 	.article-content img,
 	.article-content .highlighter-rouge div.highlight pre.highlight
 	{
