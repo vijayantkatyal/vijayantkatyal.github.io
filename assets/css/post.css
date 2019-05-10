@@ -112,7 +112,7 @@ body {
 
 @media (min-width:48em) {
 	.container {
-		max-width: 46rem
+		max-width: 46rem;
 	}
 }
 
@@ -121,9 +121,9 @@ body {
 }
 
 .jumbotron {
-	text-align: center;
+	/* text-align: center; */
 	border-bottom: .05rem solid #e5e5e5;
-	background-color: #373a3c;
+	background-color: #282c33;
 	color: #ccc;
 	margin-bottom: 0px;
 	margin-top: -40px;
