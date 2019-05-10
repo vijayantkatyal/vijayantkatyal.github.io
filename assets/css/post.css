@@ -110,10 +110,94 @@ body {
 	line-height: 3rem
 }
 
-@media (min-width:48em) {
+@media (min-width: 48em) {
 	.container {
 		max-width: 46rem;
 	}
+}
+
+@media (min-width: 1200px){
+	.article-content p,
+	.article-content h1,
+	.article-content h2,
+	.article-content h3,
+	.article-content h4,
+	.article-content img,
+	.article-content .highlighter-rouge div.highlight pre.highlight
+	{
+		max-width: 1140px;
+	}
+}
+
+@media (min-width: 992px){
+	.article-content p,
+	.article-content h1,
+	.article-content h2,
+	.article-content h3,
+	.article-content h4,
+	.article-content img,
+	.article-content .highlighter-rouge div.highlight pre.highlight
+	{
+		max-width: 960px;
+	}
+}
+
+@media (min-width: 768px){
+	.article-content p,
+	.article-content h1,
+	.article-content h2,
+	.article-content h3,
+	.article-content h4,
+	.article-content img,
+	.article-content .highlighter-rouge div.highlight pre.highlight
+	{
+		max-width: 720px;
+	}
+}
+
+@media (min-width: 576px){
+	.article-content p,
+	.article-content h1,
+	.article-content h2,
+	.article-content h3,
+	.article-content h4,
+	.article-content img,
+	.article-content .highlighter-rouge div.highlight pre.highlight
+	{
+		max-width: 540px;
+	}
+}
+
+.article-content p,
+.article-content h1,
+.article-content h2,
+.article-content h3,
+.article-content h4,
+.article-content img,
+.article-content .highlighter-rouge div.highlight pre.highlight
+{
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+@media (min-width: 48em){
+	.article-content p,
+	.article-content h1,
+	.article-content h2,
+	.article-content h3,
+	.article-content h4,
+	.article-content img,
+	.article-content .highlighter-rouge div.highlight pre.highlight
+	{
+		max-width: 46rem;
+	}
+}
+
+.article-content .highlighter-rouge div.highlight pre.highlight{
+	margin: auto;	
 }
 
 .container-narrow>hr {
