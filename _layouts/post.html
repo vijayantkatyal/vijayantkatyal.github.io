@@ -12,7 +12,7 @@ layout: post_container
 		</h1>
 		<br>
 		<p class="lead">
-			<span itemprop="datePublished">{{ page.date | date: site.date_format }}</span> {% if page.update_date %} | <span class="text-success">{{ site.text.post.updated }}: {{ page.update_date | date: site.date_format }}</span> {% endif %} {% if page.comments != false %} | <a href="{{ page.url | prepend: site.url }}#disqus_thread" data-discuss-identifier="{{ page.id }}">0 Comments</a> {% endif %}
+			<span itemprop="datePublished">{{ page.date | date: site.date_format }}</span> {% if page.update_date %} | <span class="text-success">{{ site.text.post.updated }}: {{ page.update_date | date: site.date_format }}</span> {% endif %} {% if page.comments != false %} | <a href="{{ page.url | prepend: site.baseurl }}#disqus_thread" data-discuss-identifier="{{ page.id }}">0 Comments</a> {% endif %}
 			<br style="display: block; content:''; margin-top: 10px;">
 			{% for category in page.categories %}
 				<a class="badge badge-secondary" itemprop="keywords" href="/blog/category/{{ category }}">{{ category }}</a>
