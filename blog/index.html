@@ -14,7 +14,7 @@ summary: Vijayant Katyal thoughts on life and development
 		<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 			<header class="post-header">
 				<span class="post-meta">
-					<time itemprop="datePublished" datetime="{{ post.date | date: site.date_format }}">{{ post.date | date: site.date_format }}</time> {% if post.comments != false %} | <a href="{{ post.url | prepend: site.baseurl }}#disqus_thread" data-discuss-identifier="{{ post.id }}">0 Comments</a> {% endif %}
+					<time itemprop="datePublished" datetime="{{ post.date | date: site.date_format }}">{{ post.date | date: site.date_format }}</time> {% if post.comments != false %} | <a href="{{ post.url | prepend: site.url }}#disqus_thread" data-discuss-identifier="{{ post.id }}">0 Comments</a> {% endif %}
 					<div class="post-tags">
 						{% for category in post.categories %}
 							<a itemprop="keywords" href="/blog/category/{{ category }}" class="badge badge-secondary">{{ category }}</a>
