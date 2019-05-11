@@ -184,16 +184,16 @@ body {
 	}
 }
 
-.article-content p,
-.article-content ul,
-.article-content figure,
-.article-content h1,
-.article-content h2,
-.article-content h3,
-.article-content h4,
-.article-content h5,
-.article-content hr,
-.article-content img,
+.article-content > p,
+.article-content > ul,
+.article-content > figure,
+.article-content > h1,
+.article-content > h2,
+.article-content > h3,
+.article-content > h4,
+.article-content > h5,
+.article-content > hr,
+.article-content > img,
 .article-content .highlighter-rouge div.highlight pre.highlight
 {
 	width: 100%;
@@ -218,6 +218,10 @@ body {
 	{
 		max-width: 46rem;
 	}
+}
+
+.article-content ul{
+	padding-left: 40px;
 }
 
 .article-content .highlighter-rouge div.highlight pre.highlight{
