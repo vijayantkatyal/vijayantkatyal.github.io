@@ -1,0 +1,37 @@
+:root{
+	--bg-color--body: #212529;
+	--bg-color--badge: #495057;
+
+	--color-body: #c1c1c1;
+	--color-post-title: #c1c1c1;
+	--color-text-muted: #a0a0a0ba;
+	--color-post-bottom: #343a40;
+	--color-footer-top: #495057;
+}
+
+body{
+	background-color: var(--bg-color--body);
+	color: var(--color-body);
+}
+
+footer{
+	background: var(--bg-color--body) !important;
+	border-top-color: var(--color-footer-top) !important;
+}
+
+.badge-secondary{
+	background-color: var(--bg-color--badge);
+	color: var(--color-post-title) !important;
+}
+
+.post{
+	border-bottom-color: var(--color-post-bottom); 
+}
+
+.post .post-title a{
+	color: var(--color-post-title);
+}
+
+.text-muted{
+	color: var(--color-text-muted) !important;
+}
