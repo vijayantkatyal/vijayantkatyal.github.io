@@ -2,19 +2,19 @@ body {
 	padding-top: 0px;
 }
 
-.container[itemprop="articleBody"],
+div[itemprop="articleBody"],
 .post .post-excerpt p {
-	font-family: "Merriweather","PT Serif",Georgia,"Times New Roman",serif;
+	font-family: "Nunito Sans", sans-serif;
 	color: #333;
 }
 
-.container[itemprop="articleBody"] h1,
-.container[itemprop="articleBody"] h2,
-.container[itemprop="articleBody"] h3,
-.container[itemprop="articleBody"] h4,
-.container[itemprop="articleBody"] h5,
-.container[itemprop="articleBody"] h6{
-	font-family: "Lato","Helvetica Neue",Helvetica,sans-serif;
+div[itemprop="articleBody"] h1,
+div[itemprop="articleBody"] h2,
+div[itemprop="articleBody"] h3,
+div[itemprop="articleBody"] h4,
+div[itemprop="articleBody"] h5,
+div[itemprop="articleBody"] h6{
+	font-family: "Nunito Sans", sans-serif;
 	line-height: 1.25;
 	margin-top: 1em;
 	margin-bottom: .5em;
