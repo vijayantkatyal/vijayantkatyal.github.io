@@ -2,7 +2,8 @@
 	padding: 10px;
 	overflow: auto;
 	word-wrap: normal;
-	background: #272822; color: #f8f8f2;
+	background: #272822;
+	color: #f8f8f2;
 	/* border: 1px solid #ddd; */
 	border-radius: 2px 2px 0 0;
 	margin-bottom: 0px;
