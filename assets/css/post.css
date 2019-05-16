@@ -127,6 +127,8 @@ body {
 	.article-content h5,
 	.article-content hr,
 	.article-content img,
+	.article-content section,
+	.article-content blockquote,
 	.article-content .highlighter-rouge div.highlight pre.highlight
 	{
 		max-width: 1140px;
@@ -144,6 +146,8 @@ body {
 	.article-content h5,
 	.article-content hr,
 	.article-content img,
+	.article-content section,
+	.article-content blockquote,
 	.article-content .highlighter-rouge div.highlight pre.highlight
 	{
 		max-width: 960px;
@@ -161,6 +165,8 @@ body {
 	.article-content h5,
 	.article-content hr,
 	.article-content img,
+	.article-content section,
+	.article-content blockquote,
 	.article-content .highlighter-rouge div.highlight pre.highlight
 	{
 		max-width: 720px;
@@ -178,6 +184,8 @@ body {
 	.article-content h5,
 	.article-content hr,
 	.article-content img,
+	.article-content section,
+	.article-content blockquote,
 	.article-content .highlighter-rouge div.highlight pre.highlight
 	{
 		max-width: 540px;
@@ -194,6 +202,8 @@ body {
 .article-content > h5,
 .article-content > hr,
 .article-content > img,
+.article-content section,
+.article-content blockquote,
 .article-content .highlighter-rouge div.highlight pre.highlight
 {
 	width: 100%;
@@ -214,6 +224,8 @@ body {
 	.article-content h5,
 	.article-content hr,
 	.article-content img,
+	.article-content section,
+	.article-content blockquote,
 	.article-content .highlighter-rouge div.highlight pre.highlight
 	{
 		max-width: 46rem;
