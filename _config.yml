@@ -6,7 +6,8 @@ baseurl:     ""
 url:         "https://vijayantkatyal.com"
 date_format: "%b %-d, %Y"
 email: hello@vijayantkatyal.com
-bio: Full Stack Web Developer
+bio: Entrepreneur from India. currently working on <a href="#">Instagram DM Bot</a>
+author_pic: /assets/images/me/transparent.png
 
 # blog settings
 permalink: /blog/:title.html

@@ -365,6 +365,15 @@ div[itemprop="articleBody"] h6{
 	color: #ccc;
 }
 
+.info [itemprop=name]{
+	font-size: 22px;
+	letter-spacing: 1.2px;
+}
+
+.share > div.btns{
+	margin-top: 20px;
+}
+
 .share hr {
 	border-top: #ebf2f6 1px solid;
 }
