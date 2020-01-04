@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      Template Post
-date:       2019-01-04 02:10
+date:       2020-01-04 02:10
 summary:    template post with all parameters supported
 categories: template
 update_date: 2019-01-04 02:11
