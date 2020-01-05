@@ -15,7 +15,7 @@ window.cookieconsent.initialise({
   },
 	content: {
 		header: 'Cookies used on the website!',
-		message: 'This website uses cookies to ensure you get the best experience on our website.',
+		message: 'This website uses cookies to ensure you get the best experience.',
 		dismiss: 'Got it!',
 		allow: 'Allow cookies',
 		deny: 'Decline',
