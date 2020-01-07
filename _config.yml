@@ -7,7 +7,7 @@ url:         "https://vijayantkatyal.com"
 date_format: "%b %-d, %Y"
 email: hello@vijayantkatyal.com
 bio: Web Developer from India.
-author_pic: /assets/images/me/transparent.png
+author_pic: /assets/images/me/current.png
 
 # blog settings
 permalink: /blog/:title.html
