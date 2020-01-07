@@ -2,7 +2,7 @@
 	<ShortName>Vijayant Katyal</ShortName>
 	<Description>Vijayant Katyal's Blog</Description>
 	<Url type="text/html" method="get" template="https://vijayantkatyal.com/search?q={searchTerms}"/>
-	<Image width="16" height="16">https://vijayantkatyal.com/icon.png</Image>
+	<Image width="16" height="16">https://vijayantkatyal.com/assets/icons/icon.png</Image>
 	<InputEncoding>UTF-8</InputEncoding>
 	<SearchForm>https://vijayantkatyal.com/</SearchForm>
 </OpenSearchDescription>
