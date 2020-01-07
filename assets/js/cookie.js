@@ -20,7 +20,7 @@ window.cookieconsent.initialise({
 		allow: 'Allow cookies',
 		deny: 'Decline',
 		link: 'Learn more',
-		href: '/privacy-policy',
+		href: '/privacy',
 		close: '&#x274c;',
 		policy: 'Cookie Policy',
 		target: '_blank',
