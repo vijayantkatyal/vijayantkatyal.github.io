@@ -4,7 +4,7 @@ Pages:
 > Activity page + current ongoing project
 > Blog
 > Post: article, image, links, tweets, vidoes
-> Projects showcase
+[x] Projects showcase
 > Tags / Categories
 > Lists: Software, music, tv, movies, articles, books, games, podcasts, quotes
 > Search
@@ -18,12 +18,12 @@ Global
 > notification toast
 > Post Comments
 > get in touch popup
-> Contact via chat, email or twitter dm
-> profile pic
-> fav icons
+[x] Contact via chat, email or twitter dm
+[x] profile pic
+[x] fav icons
 > search via agilio
-> dark theme
-> subscribe
+[x] dark theme
+[?] subscribe
 
 > loading animation
 > image gallery plugin
