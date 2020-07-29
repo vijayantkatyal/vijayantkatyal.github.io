@@ -6,18 +6,35 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
 
 	<style>
+		/* global colors */
+		:root {
+			--link-color: #1C68CB;
+			--link-hover-color: #28a745;
+			
+			--icon-bg-color: #0000008c;
+			--icon-hover-color: #464646;
 
+			--summary-title-color: #464646;
+			--summary-text-color: #6C757D;
+
+			--author-border-color: #00000040;
+		}
+	</style>
+
+	<style>
+
+		/* custom style */
 		body{
 			font-family: Assistant;
 		}
 
 		a {
-			color: #1C68CB;
+			color: var(--link-color);
 			text-decoration: none;
 		}
 
 		a:hover {
-			color: #28a745;
+			color: var(--link-hover-color);
 		}
 		
 		.navbar {
@@ -25,7 +42,7 @@
 		}
 
 		.app_icon {
-			background-color: #464646;
+			background-color: var(--icon-bg-color);
 			font-size: 26px;
 			width: 40px;
 			height: 40px;
@@ -36,9 +53,17 @@
 			margin: 0px;
 		}
 
+		.app_icon:hover {
+			background-color: var(--icon-hover-color);
+		}
+
 		#app_mode {
 			padding: 4px;
 			background: none;
+		}
+
+		#app_mode:hover svg {
+			fill: var(--icon-hover-color);
 		}
 
 		.container-fluid {
@@ -53,13 +78,13 @@
 
 		#nav_icons > li > a:hover > svg[fill=none]
 		{
-			stroke: #464646;
+			stroke: var(--icon-hover-color);
 		}
 
 		#nav_icons > li > a:hover > svg:not([fill="none"])
 		{
-			stroke: #464646;
-			fill: #464646;
+			stroke: var(--icon-hover-color);
+			fill: var(--icon-hover-color);
 		}
 
 		#index_page {
@@ -70,17 +95,20 @@
 		#author_img {
 			width: 140px;
 			border-radius: 70px;
-			border: 1px solid #e0e0e0;
+			border: 1px solid var(--author-border-color);
 			margin-bottom: 9px;
 		}
 
 		.summary_card {
 			font-size: 20px;
-			color: #6C757D;
+			color: var(--summary-text-color);
 			margin-top: 30px;
 			margin-bottom: 30px;
 		}
 
+		.summary_card .title {
+			color: var(--summary-title-color);
+		}
 		.summary_card .description {
 			font-size: 18px;
 			font-weight: 300;
@@ -107,7 +135,7 @@
 <body>
 
 	<nav class="navbar navbar-expand fixed-top navbar-light">
-		<a class="navbar-brand app_icon" href="#">V</a>
+		<a class="navbar-brand app_icon" href="/">V</a>
 
 		<ul class="navbar-nav ml-auto" id="nav_icons">
 			<li class="nav-item active">
@@ -175,7 +203,7 @@
 		</div>
 		
 		<div class="summary_card m_t_10">
-			<b>currently working on <a target="blank" href="https://myjumpstreet.com">@myjumpstreet</a></b>
+			<b class="title">currently working on <a target="blank" href="https://myjumpstreet.com">@myjumpstreet</a></b>
 			<br>
 			<span class="description">
 				platform to find sports and activities around you
@@ -183,7 +211,7 @@
 		</div>
 		
 		<div class="summary_card">
-			<b>recent </b><a href="#">projects</a>
+			<b class="title">recent <a href="#">projects</a></b>
 			<br>
 			<a href="#">http://adott.ca</a>
 			<br>
@@ -193,7 +221,7 @@
 		</div>
 
 		<div class="summary_card">
-			<b>recent posts from </b><a href="#">blog</a>
+			<b class="title">recent posts from <a href="#">blog</a></b>
 			<div class="description">
 				<a href="#">using Linkedin v2 API to login and get profile, company pages and more</a>
 				<br>
@@ -215,7 +243,7 @@
 
 	<nav class="navbar navbar-expand fixed-bottom navbar-light">
 		<a class="navbar-brand app_icon" id="app_mode" href="#">
-			<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="30px" width="30px" fill="#6C757D" version="1.1" x="0px" y="0px" viewBox="0 0 48 48" xml:space="preserve">
+			<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="30px" width="30px" fill="#0000008c" version="1.1" x="0px" y="0px" viewBox="0 0 48 48" xml:space="preserve">
 				<path d="M25.5,48c-13.233,0-24-10.768-24-24c0-13.233,10.767-24,24-24h1c0.361,0,0.693,0.195,0.873,0.511  c0.177,0.315,0.169,0.702-0.021,1.011c-2.172,3.547-4.677,13.663-0.938,22.072C29.34,30.177,37.193,34.868,45.518,35  c0.358,0.006,0.688,0.204,0.859,0.518c0.173,0.314,0.164,0.698-0.023,1.004C42.02,43.602,34.027,48,25.5,48z"/>
 			</svg>
 		</a>
