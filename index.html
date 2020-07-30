@@ -1,162 +1,56 @@
 ---
-layout: compress
+layout: index
 meta_description: Vijayant Katyal is a full stack web developer helping make the world a better place through his work.
-title: Vijayant Katyal's Blog
 summary: Vijayant Katyal thoughts on life and development
 ---
-<!DOCTYPE html>
-<html>
+<div class="container-fluid" id="index_page">
 
-<head>
-	<meta charset="utf-8">
-	<meta name="theme-color" content="#000000" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<div class="text-center">
+		<img src="/assets/images/me/1795103.png" alt="" class="img-fluid" id="author_img">
+		<h1>Vijayant Katyal</h1>
+	</div>
 
-	{% if page.meta_robots %}
-	<meta name="robots" content="{{ page.meta_robots }}">
-	{% else %}
-	<meta name="robots" content="all">
-	{% endif %}
-
-	<meta name="author" content="{{ site.author }}">
-	<link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Vijayant Katyal">
-	<meta name="description" content="{% if page.meta_description %}{{ page.meta_description | xml_escape }}{% elsif page.summary %}{{ page.summary | xml_escape }}{% else %}{{ site.description | xml_escape }}{% endif %}">
-
-	{% if page.categories %}
-	<meta name="keywords" content="{{ page.categories | join: ', ' }}">
-	{% endif %}
-
-	{% if site.google_verification %}
-	<meta name="google-site-verification" content="{{ site.google_verification }}" />
-	{% endif %}
-
-	{% if site.bing_verification %}
-	<meta name="msvalidate.01" content="{{ site.bing_verification }}" />
-	{% endif %}
-
-	<meta name="twitter:card" content="summary" />
-	<meta name="twitter:image:src" content="https://vijayantkatyal.com/assets/images/me/current.png">
-
-	{% if site.twitter_username %}
-	<meta name="twitter:creator" content="@{{ site.twitter_username }}">
-	<meta name="twitter:site" content="@{{ site.twitter_username }}" />
-	{% endif %}
-
-	<meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
-	<meta name="twitter:description"
-		content="{% if page.summary %}{{ page.summary }}{% else %}{{ site.description }}{% endif %}" />
-	<meta name="twitter:url" content="{{ site.url }}{{ page.url }}" />
-
-	<title>
-		{% if page.title %}
-		{{ page.title | strip_html }} &#8211;
-		{% endif %}
-		{{ site.title | strip_html }}
-	</title>
-
-	<link rel="me" type="text/html" href="http://github.com/vijayantkatyal" />
-	<link rel="me" type="text/html" href="https://vijayantkatyal.com/blog/atom.xml" />
-	<link rel="me" type="text/html" href="http://twitter.com/vijayantkatyal" />
-
-	<link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon.png">
-
-	<link rel="dns-prefetch" href="//maxcdn.bootstrapcdn.com">
-
-	<link rel="stylesheet" href="/assets/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-		integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-	<link rel="stylesheet" href="/assets/css/blog.css" />
-	<link rel="stylesheet" href="/assets/css/post.css" />
-	<link rel="stylesheet" href="/assets/css/cookie.css">
-
-	<link href="https://fonts.googleapis.com/css?family=Hind+Siliguri" rel="stylesheet">
-
-	<link href="/blog/atom.xml" type="application/atom+xml" rel="alternate" title="Vijayant Katyal's Blog">
-	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-
-	<style>
-		body {
-			font-family: 'Hind Siliguri', sans-serif;
-		}
-
-		#author_dp {
-			border-radius: 8px !important;
-		}
-	</style>
-
-</head>
-
-<body>
-	<br><br>
-	<div class="container" itemscope itemtype="http://schema.org/Person">
-		<div class="row">
-			<div class="col-lg-5 col-md-5 col-sm-12 text-center">
-				<br><br>
-				<img id="author_dp" src="/assets/images/me/current.png" itemprop="image"
-					class="img-fluid rounded-circle" alt="">
-				<br><br>
-				<h4 class="text-center" itemprop="name">Vijayant Katyal</h4>
-				<div class="index_contact">
-					{% if site.email %}
-					<a href="mailto:{{ site.email }}?subject=Hi, Vijayant Katyal&body=visitor from {{ site.url }}{{ page.url }}"
-						title="Mail Address">
-						<i class="fa fa-envelope"></i>
-					</a>
-					{% endif %}
-					{% if site.twitter_username %}
-					<a href="https://twitter.com/{{ site.twitter_username }}" title="Twitter Profile" target="_blank">
-						<i class="fab fa-twitter"></i>
-					</a>
-					{% endif %}
-					{% if site.github_username %}
-					<a href="https://github.com/{{ site.github_username }}" title="Github Profile" target="_blank">
-						<i class="fab fa-github"></i>
-					</a>
-					{% endif %}
-					{% if site.stackoverflow_id %}
-					<a href="http://stackoverflow.com/story/vijayantkatyal" title="CV" target="_blank">
-						<i class="fab fa-stack-overflow"></i>
-					</a>
-					{% endif %}
-					<a href="/blog/atom.xml" target="_blank" title="Blog feed">
-						<i class="fas fa-rss-square"></i>
-					</a>
-				</div>
-				<br><br>
+	<div class="summary_card m_t_20 m_b_10">
+		I am a full stack web developer from india, helping
+		<br>
+		make the world a better place through my work.
+	</div>
+	
+	<!-- <div class="summary_card m_t_10">
+		<b class="title">currently working on <a target="blank" href="https://myjumpstreet.com">@myjumpstreet</a></b>
+		<br>
+		<span class="description">
+			platform to find sports and activities around you
+		</span>
+	</div> -->
+	
+	<div class="summary_card">
+		<b class="title">recent <a href="/projects">projects</a></b>
+		<br>
+		<div id="projects">
+			<div class="project">
+				<a href="http://lpal.net">Lead Pal</a>
+				<br>
+				<span class="description">
+					Lead Generation (SAAS Product) using links and popups. user can use email or any social platform (twitter, google , facebook , etc.)
+				</span>
 			</div>
-			<div class="col-lg-7 col-md-7 col-sm-12">
-				<p class="lead text-right">
-					I am a <a class="index_link" title="CV" itemprop="jobTitle"
-						href="http://stackoverflow.com/story/vijayantkatyal" target="_blank">full stack web
-						developer</a> from <span itemprop="homeLocation">india</span>, helping make the world a better
-					place through my work.
-					<br><br>
-					I am an open-source <a class="index_link" href="https://github.com/{{ site.github_username }}"
-						title="GitHub Profile">contributor</a> and I like making things that help people with their
-					work.
-					I am the author of <a class="index_link" itemprop="owns" href="/svg-bits"
-						title="cross platform desktop app, which make it easy to work with svg (icons) ">SVG bits</a>.
-					<br><br>
-					Also I frequently <a class="index_link" itemprop="owns" title="Blog" href="/blog">Blog</a> about
-					life and development.
-					<br><br>
-					recent posts:
-					<br>
-					{% for post in site.posts limit:2 %}
-					<a class="index_link" href="{{ post.id }}">{{ post.title }}</a><br>
-					{% endfor %}
-				</p>
+			<div class="project">
+				<a href="http://adott.ca">Adott</a>
+				<br>
+				<span class="description">
+					online liquor store from canda
+				</span>
 			</div>
 		</div>
-
 	</div>
-	<script src="/assets/js/ga.js"></script>
-	<script src="/assets/js/jquery.min.js"></script>
-	<script src="/assets/js/popper.min.js"></script>
-	<script src="/assets/js/boostrap.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
-	<script type="text/javascript" src="/assets/js/cookie.js"></script>
-</body>
 
-</html>
+	<div class="summary_card">
+		<b class="title">recent posts from <a href="/blog">blog</a></b>
+		<div class="description">
+			{% for post in site.posts limit:2 %}
+				<a href="{{ post.id }}">{{ post.title }}</a><br>
+			{% endfor %}
+		</div>
+	</div>
+</div>

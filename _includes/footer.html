@@ -1,50 +1,22 @@
-<footer class="footer">
-	<div class="container" itemscope itemtype="http://schema.org/Person">
-		All content copyright
-		<a href="/" itemprop="name">
-			<u>Vijayant Katyal</u>
-		</a> &copy; 2020 • All rights reserved.
-		<br><br>
-		<span class="follow">
-			{% if site.email %}
-            <a href="mailto:{{ site.email }}?subject=Hi, Vijayant Katyal&body=visitor from {{ site.url }}{{ page.url }}">
-              <i class="fa fa-envelope"></i>
-            </a>
-			{% endif %}
-			{% if site.linkedin_username %}
-				<a href="https://linkedin.com/in/{{ site.linkedin_username }}" target="_blank">
-					<i class="fab fa-linkedin"></i>
-				</a>
-			{% endif %}
-			{% if site.twitter_username %}
-			<a href="https://twitter.com/{{ site.twitter_username }}" target="_blank">
-				<i class="fab fa-twitter"></i>
-			</a>
-			{% endif %}
-			{% if site.github_username %}
-			<a href="https://github.com/{{ site.github_username }}" target="_blank">
-				<i class="fab fa-github"></i>
-			</a>
-			{% endif %}
-			{% if site.stackoverflow_id %}
-			<a href="http://stackoverflow.com/story/vijayantkatyal" target="_blank">
-				<i class="fab fa-stack-overflow"></i>
-			</a>
-			{% endif %}
-			<a href="/blog/atom.xml" target="_blank">
-				<i class="fas fa-rss-square"></i>
-			</a>
-		</span>
-	</div>
-</footer>
 
-<ul id="cookie"></ul>
-<script type="text/javascript" src="/assets/js/ga.js"></script>
-<script type="text/javascript" src="/assets/js/jquery.min.js"></script>
-<script src="/assets/js/popper.min.js"></script>
-<script type="text/javascript" src="/assets/js/boostrap.min.js"></script>
-<script src="/assets/js/medium-zoom.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
-<script type="text/javascript" src="/assets/js/cookie.js"></script>
-<script type="text/javascript" src="/assets/js/blog.js"></script>
-<script id="dsq-count-scr" src="//{{ site.disqus_shortname }}.disqus.com/count.js" async></script>
+<div class="container-fluid" id="footer">
+	<nav class="navbar navbar-expand navbar-light">
+		<ul class="navbar-nav mr-auto ml-auto">
+			<li class="nav-item">
+				<a class="nav-link" href="#" highlight="none">
+					&copy; Vijayant Katyal 2020
+				</a>
+			</li>
+		</ul>
+	</nav>
+</div>
+
+<nav class="navbar navbar-expand fixed-bottom navbar-light">
+	<a class="navbar-brand app_icon" id="app_mode" href="#" highlight="none">
+		<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="30px" width="30px" fill="#0000008c" version="1.1" x="0px" y="0px" viewBox="0 0 48 48" xml:space="preserve">
+			<path d="M25.5,48c-13.233,0-24-10.768-24-24c0-13.233,10.767-24,24-24h1c0.361,0,0.693,0.195,0.873,0.511  c0.177,0.315,0.169,0.702-0.021,1.011c-2.172,3.547-4.677,13.663-0.938,22.072C29.34,30.177,37.193,34.868,45.518,35  c0.358,0.006,0.688,0.204,0.859,0.518c0.173,0.314,0.164,0.698-0.023,1.004C42.02,43.602,34.027,48,25.5,48z"/>
+		</svg>
+	</a>
+</nav>
+
+<script src="/assets/js/ga.js"></script>

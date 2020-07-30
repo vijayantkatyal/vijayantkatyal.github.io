@@ -1,43 +1,53 @@
 ---
-layout: blog
-title: Vijayant Katyal's Blog
+layout: index
+title: Blog
 summary: Vijayant Katyal thoughts on life and development
 ---
-{% assign posts_count = paginator.posts | size %}
 
-{% if posts_count > 0 %}
+<div class="container-fluid" id="blog_page">
+	<div class="row">
+		<div class="col-12 col-sm-12 col-md-10 ml-auto mr-auto">
+			{% assign posts_count = paginator.posts | size %}
 
-<div class="posts" itemscope='' itemtype='http://schema.org/Blog'>
+			{% if posts_count > 0 %}
 
-	{% for post in paginator.posts %}
+			<div itemscope='' itemtype='http://schema.org/Blog'>
 
-		<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-			<header class="post-header">
-				<span class="post-meta">
-					<time itemprop="datePublished" datetime="{{ post.date | date: site.date_format }}">{{ post.date | date: site.date_format }}</time> {% if post.comments != false %} | <a href="{{ post.url | prepend: site.baseurl }}#disqus_thread" data-discuss-identifier="{{ post.id }}">0 Comments</a> {% endif %}
-					<div class="post-tags">
-						{% for category in post.categories %}
-							<a itemprop="keywords" href="/blog/category/{{ category }}" class="badge badge-secondary">{{ category }}</a>
-						{% endfor %}						
-					</div>
-				<h2 class="post-title" itemprop="name headline"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
-			</header>
-			<section class="post-excerpt" itemprop="articleBody">
-				<p class="text-muted">
-					{% if post.summary %}
-						{{ post.summary }}
-					{% endif %}
-				</p>
-			</section>
-		</article>
-	
-	{% endfor %}
-	
-	<br><br><br>
+				{% for post in paginator.posts %}
 
-	{% include pagination.html %}
+					<article itemscope itemtype="http://schema.org/BlogPosting">
+						<header>
+							<div class="row">
+								<div class="col-12">
+									<time itemprop="datePublished" datetime="{{ post.date | date: site.date_format }}">{{ post.date | date: site.date_format }}</time> {% if post.comments != false %} | <a href="{{ post.url | prepend: site.baseurl }}#disqus_thread" data-discuss-identifier="{{ post.id }}">0 Comments</a> {% endif %}
+								</div>
+								<!-- <div class="col-6 text-right">
+									{% for category in post.categories %}
+										<a itemprop="keywords" href="/blog/category/{{ category }}" class="badge bg-secondary">{{ category }}</a>
+									{% endfor %}						
+								</div> -->
+							</div>
+							<h2 itemprop="name headline"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+						</header>
+						<section itemprop="articleBody">
+							<p class="text-muted">
+								{% if post.summary %}
+									{{ post.summary }}
+								{% endif %}
+							</p>
+						</section>
+					</article>
+				
+				{% endfor %}
+				
+				<br><br><br>
 
+				{% include pagination.html %}
+
+			</div>
+			{% else %}
+				<h1 class='text-xs-center'>{{ site.text.index.coming_soon }}</h3>
+			{% endif %}
+		</div>
+	</div>
 </div>
-{% else %}
-	<h1 class='text-xs-center'>{{ site.text.index.coming_soon }}</h3>
-{% endif %}

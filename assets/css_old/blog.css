@@ -1,0 +1,108 @@
+body {
+	padding-top: 20px;
+}
+
+.header_contact_links{
+	clear: both;
+}
+
+.index_contact a,
+.header_contact_links a{
+	color:#55595c;
+	transition: color 300ms ease-in-out;
+}
+.index_contact a:hover,
+.header_contact_links a:hover {
+	color: #2196F3;
+	text-decoration: none;
+}
+
+.navbar {
+	margin-bottom: 20px;
+}
+
+blockquote{
+	padding: .5rem 1rem;
+	margin-bottom: 1rem;
+	font-size: 1.25rem;
+	border-left: .25rem solid #eceeef;
+}
+
+.footer {
+	position: relative;
+	margin: 8rem 0 0 0;
+	padding: 4rem 0;
+	border-top: .05rem solid #e5e5e5;
+	line-height: 1.7em;
+	text-align: center;
+	background: #f7fafb;
+	color: #bbc7cc;
+	padding-top: 1.5rem;
+}
+
+.footer a {
+	color: #9E9E9E;
+}
+
+.footer a:hover {
+	color: #000;
+	text-decoration: none;
+}
+
+.footer .follow a {
+	margin-right: 10px;
+	font-size: 18px;
+}
+
+.index_link {
+	border-bottom: 1px dashed #8c8c8c;
+	color: #297db1;
+}
+
+a.index_link:hover{
+	text-decoration: none;
+	border-bottom-style: solid;
+}
+
+.index_contact {
+	text-align: center;
+	margin-top: 10px;
+}
+
+.index_contact i {
+	font-size: 20px;
+	padding: 5px;
+}
+
+body.error_page {
+	background-image: url('/assets/gifs/friends.gif');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-color: #373a3c;
+}
+
+/* body.error_page #navbar-header {
+	background-color: #fff;
+} */
+
+/* #navbar-header{
+	color: #cccccc!important;
+} */
+
+#navbar-header a{
+	color: #cccccc !important;
+}
+
+#navbar-header a:hover{
+	color: #65bbe5 !important;
+	text-decoration: none !important;
+}
+
+/* #navbar-header #menu a{
+	border-bottom: 1px dashed #8c8c8c;
+} */
+
+body.error_page div.container {
+	color: #fff;
+}

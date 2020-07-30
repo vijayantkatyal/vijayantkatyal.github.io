@@ -1,49 +1,57 @@
 ---
 layout: post_container
 ---
-<div class="jumbotron jumbotron-fluid">
-	<div class="container">
-		<h1 class="display-4 jumbotron-heading text-center">
-			<span class="badge badge-secondary">{{ page.title }}</span>
-		</h1>
-	</div>
-</div>
 
-<div class="container">
-	{% unless page.content == '' %}
-		<p>{{ page.content }}</p>
-	{% endunless %}
+<div class="container-fluid" id="blog_page">
+	<div class="row">
+		<div class="col-12 col-sm-12 col-md-10 ml-auto mr-auto">
+			
+			<div class="card border-info mb-3">
+				<div class="card-body text-info">
+					<h5 class="card-title">{{ page.title }}</h5>
+					<p class="card-text">All Posts tagged "{{ page.title }}"</p>
+				</div>
+			</div>
 
-	{% assign category_size = site.categories[page.category] | size %}
-	{% if category_size == 0 %}
-		<br><br>
-		<h3 class="text-warning text-xs-center">No posts in this category at this time.</h3>
-		<br><br><br>
-		<br><br><br>
-		<br><br><br>
-	{% endif %}
+			{% unless page.content == '' %}
+				<p>{{ page.content }}</p>
+			{% endunless %}
 
-	<div class="posts">
-		{% for post in site.categories[page.category] %}
-			<article class="post">
-				<header class="post-header">
-					<span class="post-meta">
-						<time datetime="{{ post.date | date: site.date_format }}">{{ post.date | date: site.date_format }}</time> {% if post.comments != false %} | <a href="{{ post.url | prepend: site.baseurl }}#disqus_thread" data-discuss-identifier="{{ post.id }}">0 Comments</a> {% endif %}
-						<div class="post-tags">
-							{% for category in post.categories %}
-								<a class="badge badge-secondary" href="/blog/category/{{ category }}">{{ category }}</a>
-							{% endfor %}				
-						</div>
-					<h2 class="post-title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
-				</header>
-				<section class="post-excerpt">
-					<p class="text-muted">
-						{% if post.summary %}
-							{{ post.summary }}
-						{% endif %}
-					</p>
-				</section>
-			</article>
-		{% endfor %}
+			{% assign category_size = site.categories[page.category] | size %}
+			{% if category_size == 0 %}
+				<br><br>
+				<h3 class="text-warning text-xs-center">No posts in this category at this time.</h3>
+				<br><br><br>
+				<br><br><br>
+				<br><br><br>
+			{% endif %}
+
+			<div class="posts">
+				{% for post in site.categories[page.category] %}
+					<article>
+						<header>
+							<div class="row">
+								<div class="col-6">
+									<time datetime="{{ post.date | date: site.date_format }}">{{ post.date | date: site.date_format }}</time> {% if post.comments != false %} | <a href="{{ post.url | prepend: site.baseurl }}#disqus_thread" data-discuss-identifier="{{ post.id }}">0 Comments</a> {% endif %}
+								</div>
+								<div class="col-6 text-right">
+									{% for category in post.categories %}
+										<a class="badge bg-secondary" href="/blog/category/{{ category }}">{{ category }}</a>
+									{% endfor %}				
+								</div>
+							</div>
+							<h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+						</header>
+						<section class="post-excerpt">
+							<p class="text-muted">
+								{% if post.summary %}
+									{{ post.summary }}
+								{% endif %}
+							</p>
+						</section>
+					</article>
+				{% endfor %}
+			</div>
+		</div>
 	</div>
 </div>

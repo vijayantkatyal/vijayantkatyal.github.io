@@ -1,18 +1,49 @@
 ---
-layout: compress
+layout: index
+title: Blog
+summary: Vijayant Katyal thoughts on life and development
 ---
-<!DOCTYPE html>
-<html style="height: 100%;">
-{% include head.html %}
-<body class="error_page">
-    {% include header.html %}
-    <br><br>
-    <div class="container">
-        {{ content }}
+
+<style>
+    html{
+        height: 100%;
+    }
+    body {
+        background-image: url('/assets/gifs/friends.gif');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-color: #373a3c;
+    }
+    .container {
+        margin-top: 120px;
+        height: 50vh;
+        color: #fff;
+        text-align: center;
+    }
+
+    a {
+        color: #fff !important;
+    }
+
+    #nav_icons > li > a > svg[fill=none]
+    {
+        stroke: #fff !important;
+    }
+
+    #nav_icons > li > a > svg:not([fill="none"])
+    {
+        stroke: #fff !important;
+        fill: #fff !important;
+    }
+</style>
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+        
+            {{ content }}
+
+        </div>
     </div>
-    <script type="text/javascript" src="/assets/js/ga.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js" crossorigin="anonymous"></script>
-</body>
-</html>
+</div>

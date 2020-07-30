@@ -1,6 +1,6 @@
 ---
-layout: blog
-title: Vijayant Katyal Blog Categories
+layout: index
+title: Blog Categories
 ---
 
 <style>
@@ -11,34 +11,40 @@ title: Vijayant Katyal Blog Categories
   }
 </style>
 
-<h1>Categories</h1>
+<div class="container-fluid" id="blog_page">
+	<div class="row">
+		<div class="col-12 col-sm-12 col-md-10 ml-auto mr-auto">
+			<h1>Categories</h1>
 
-{% assign categories_list = site.categories %}
-  {% if categories_list.first[0] == null %}
-    {% for category in categories_list %}
-		<a itemprop="keywords" href="/blog/category/{{ category }}" class="badge badge-secondary">{{ category }}</a>
-    {% endfor %}
-  {% else %}
-    {% for category in categories_list %}
-		<a itemprop="keywords" href="/blog/category/{{ category[0] }}" class="badge badge-secondary">{{ category[0] }}</a>
-    {% endfor %}
-  {% endif %}
-{% assign categories_list = nil %}
+			{% assign categories_list = site.categories %}
+			{% if categories_list.first[0] == null %}
+				{% for category in categories_list %}
+					<a itemprop="keywords" href="/blog/category/{{ category }}" class="badge bg-secondary">{{ category }}</a>
+				{% endfor %}
+			{% else %}
+				{% for category in categories_list %}
+					<a itemprop="keywords" href="/blog/category/{{ category[0] }}" class="badge bg-secondary">{{ category[0] }}</a>
+				{% endfor %}
+			{% endif %}
+			{% assign categories_list = nil %}
 
-<hr>
+			<hr>
 
-{% for tag in site.categories %}
-  <h3 id="{{ tag[0] }}">{{ tag[0] }}</h3>
-  <ul>
-    {% assign pages_list = tag[1] %}
-    {% for post in pages_list %}
-      {% if post.title != null %}
-      {% if group == null or group == post.group %}
-      <li><a href="{{ site.url }}{{ post.url }}">{{ post.title }} - <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time></span></a></li>
-      {% endif %}
-      {% endif %}
-    {% endfor %}
-    {% assign pages_list = nil %}
-    {% assign group = nil %}
-  </ul>
-{% endfor %}
+			{% for tag in site.categories %}
+			<h3 id="{{ tag[0] }}">{{ tag[0] }}</h3>
+			<ul>
+				{% assign pages_list = tag[1] %}
+				{% for post in pages_list %}
+				{% if post.title != null %}
+				{% if group == null or group == post.group %}
+				<li><a href="{{ site.url }}{{ post.url }}">{{ post.title }} - <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time></span></a></li>
+				{% endif %}
+				{% endif %}
+				{% endfor %}
+				{% assign pages_list = nil %}
+				{% assign group = nil %}
+			</ul>
+			{% endfor %}
+		</div>
+	</div>
+</div>

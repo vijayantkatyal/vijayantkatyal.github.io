@@ -1,0 +1,13 @@
+/* global colors */
+:root {
+	--link-color: #1C68CB;
+	/* --link-hover-color: #464646; */
+	
+	--icon-bg-color: #0000008c;
+	--icon-hover-color: #464646;
+
+	--summary-title-color: #464646;
+	--summary-text-color: #6C757D;
+
+	--author-border-color: #00000040;
+}

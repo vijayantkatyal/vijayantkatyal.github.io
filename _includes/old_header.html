@@ -1,0 +1,72 @@
+<div class="collapse bg-dark p-4" id="navbar-header">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-3">
+				<h4 class="text-white">Menu</h4>
+				<ul class="list-unstyled">
+					<li><a href="/">Home</a></li>
+					<li><a href="/blog">Blog</a></li>
+					<li><a href="/blog/categories">Categories</a></li>
+					<li><a href="/projects">Projects</a></li>
+					<li><a href="/lists">Lists</a></li>
+					<li><a href="http://stackoverflow.com/story/vijayantkatyal" target="_blank">CV</a></li>
+				</ul>
+			</div>
+			<div class="col-sm-6">
+				<h4 class="text-white">About</h4>
+				<p class="text-muted" style="color: #a2afb6!important;">
+					I am a <a class="index_link" href="http://stackoverflow.com/cv/vijayantkatyal" target="_blank">full stack web developer</a>					from <span itemprop="homeLocation">india</span>, helping make the world a better place through my work.<br> I am an
+					open-source <a class="index_link" href="https://github.com/{{ site.github_username }}">contributor</a> and I like making
+					things that help people with their work. I am the author of <a class="index_link" itemprop="owns" href="/svg-bits">SVG bits</a>.
+				</p>
+			</div>
+			<div class="col-sm-2">
+				<div class="float-md-right float-sm-none">
+					<h4 class="text-white">Contact</h4>
+					<ul class="list-unstyled header_contact_links">
+						{% if site.email %}
+						<li>
+							<a href="mailto:{{ site.email }}?subject=Hi, Vijayant Katyal&body=visitor from {{ site.url }}{{ page.url }}">
+								<i class="fa fa-envelope"></i> Email
+							</a>
+						</li>
+						{% endif %}
+
+						{% if site.twitter_username %}
+						<li>
+							<a href="https://twitter.com/{{ site.twitter_username }}" target="_blank">
+								<i class="fab fa-twitter"></i> Twitter
+							</a>
+						</li>
+						{% endif %}
+						{% if site.github_username %}
+						<li>
+							<a href="https://github.com/{{ site.github_username }}" target="_blank">
+								<i class="fab fa-github"></i> GitHub
+							</a>
+						</li>
+						{% endif %}
+						<li>
+							<a href="/blog/atom.xml" target="_blank">
+								<i class="fas fa-rss-square"></i> Feed
+							</a>
+						</li>					
+					</ul>
+				</div>
+			</div>
+			<div class="col-sm-1"></div>
+		</div>
+	</div>
+</div>
+
+<!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-header">
+	<span class="navbar-toggler-icon"></span>
+</button> -->
+
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header" aria-expanded="false" aria-label="Toggle navigation">
+	<i class="fas fa-bars"></i>
+</button>
+
+<a href="/search" class="float-right global-search">
+	<i class="fa fa-search"></i> Search
+</a>
