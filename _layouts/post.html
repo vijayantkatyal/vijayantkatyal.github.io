@@ -1,25 +1,21 @@
 ---
 layout: post_container
 ---
-{% if page.featured_image != null %}
-	<div class="jumbotron jumbotron-fluid post_featured_image" style="background-image: url('/assets/images/featured/{{ page.featured_image}}');">
-{% else %}
-	<div class="jumbotron jumbotron-fluid">
-{% endif %}
-	<div class="container">
-		<h1 class="display-4 jumbotron-heading" itemprop="name headline">
-			{{ page.title }}
-		</h1>
-		<br>
-		<p class="lead">
-			<span itemprop="datePublished">{{ page.date | date: site.date_format }}</span> {% if page.update_date %} | <span class="text-success">{{ site.text.post.updated }}: {{ page.update_date | date: site.date_format }}</span> {% endif %} {% if page.comments != false %} | <a href="{{ page.url | prepend: site.baseurl }}#disqus_thread" data-discuss-identifier="{{ page.id }}">0 Comments</a> {% endif %}
-			<br style="display: block; content:''; margin-top: 10px;">
-			{% for category in page.categories %}
-				<a class="badge badge-secondary" itemprop="keywords" href="/blog/category/{{ category }}">{{ category }}</a>
-			{% endfor %}
-		</p>
-	</div>
+
+<div class="post_header">
+	<h1 class="display-4" itemprop="name headline">
+		{{ page.title }}
+	</h1>
+	<br>
+	<p class="lead">
+		<span itemprop="datePublished">{{ page.date | date: site.date_format }}</span> {% if page.update_date %} | <span class="text-success">{{ site.text.post.updated }}: {{ page.update_date | date: site.date_format }}</span> {% endif %} {% if page.comments != false %} | <a href="{{ page.url | prepend: site.baseurl }}#disqus_thread" data-discuss-identifier="{{ page.id }}">0 Comments</a> {% endif %}
+	</p>
+	{% for category in page.categories %}
+		<a class="badge bg-secondary" itemprop="keywords" href="/blog/category/{{ category }}">{{ category }}</a>
+	{% endfor %}
 </div>
+<br>
+
 
 {% if page.intro_image != null %}
 	<br>
@@ -30,21 +26,19 @@ layout: post_container
 			</div>
 		</div>
 	</div>
+	<br>
 {% endif %}
 
 <div itemprop="articleBody">	
-	<br><br>
-	<div class="article-content">
+	<div>
 		{{ content }}
 	</div>
-	<div class="container">
+	<div>
 		<br><br>
 		{% if site.show_sharing_icons %}
 			{% include share_buttons.html %}
 			<br>
 		{% endif %}
-
-		{% include disqus.html %}
 
 		{% if site.show_related_posts %}
 			<h3 class="related-post-title">{{ site.text.post.related_posts }}</h3>

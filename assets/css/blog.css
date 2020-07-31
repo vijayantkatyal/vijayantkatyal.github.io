@@ -72,6 +72,29 @@ a:not([highlight="none"]):hover {
 	width: 800px;
 }
 
+.post_header .lead {
+	margin-bottom: 8px;
+}
+
+.post_header .badge {
+	font-size: 1rem;
+}
+
+.post_footer {
+	border: none;
+	border-top: 1px dashed var(--author-border-color);
+	padding-top: 20px;
+}
+
+.post_footer .img_wrapper {
+	padding: 20px;
+}
+
+.post_footer .img_wrapper img {
+	border-radius: 50%;
+	border: 1px solid var(--author-border-color);
+}
+
 .badge.bg-secondary:hover {
 	color: #fff;
 	background-color: var(--icon-hover-color) !important;

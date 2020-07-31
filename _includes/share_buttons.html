@@ -1,25 +1,14 @@
-<hr>
-<div class="row">
-	<div class="col-md-9 col-sm-12 info">
-		<div class="row">
-			<div class="col-3">
-				<img id="author_dp" src="{{ site.author_pic }}" itemprop="image" class="img-fluid rounded-circle" alt="">
-			</div>
-			<div class="col-9">
-				<h5 itemprop="name">{{ site.author }}</h5>
-				<p itemprop="jobTitle">{{ site.bio }}</p>
+<div class="card post_footer">
+	<div class="row g-0">
+		<div class="col-9">
+			<div class="card-body">
+	  			<h5 class="card-title">{{ site.author }}</h5>
+	  			<p class="card-text">{{ site.bio }}</p>
+				<a href="/about" class="btn btn-primary">About Me</a>
 			</div>
 		</div>
-	</div>
-	
-	<div class="col-md-3 text-md-right share col-sm-12">
-		<h6>{{ site.text.share_buttons.text }}</h6>
-		<div class="btns">
-			<a class="fa fa-envelope" href="mailto:?subject=Check this out&body={{ site.url }}{{ page.url }}" title="Send Email"></a>
-			{% if site.share_twitter %}
-			<a class="fab fa-twitter" href="https://twitter.com/intent/tweet?text={{ page.title }} via @vijayantkatyal &url={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Post on Twitter"></a>
-			{% endif %}
-			<a class="fab fa-reddit" href="//www.reddit.com/submit" onclick="window.location = '//www.reddit.com/submit?url=' + encodeURIComponent(window.location); return false" title="Post on Reddit"></a>
+		<div class="col-3 img_wrapper">
+			<img src="{{ site.author_pic }}" class="img-fluid"  alt="...">
 		</div>
 	</div>
 </div>
