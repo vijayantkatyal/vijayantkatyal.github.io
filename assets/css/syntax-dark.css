@@ -148,8 +148,7 @@
 	font-variant: normal;
 	font-weight: 900;
 	-webkit-font-smoothing: antialiased;
-	content: "\f121";
-	font-family: "Font Awesome 5 Free";
+	content: "⃤";
 	/* padding-left: 10px; */
 	padding-right: 20px;
 	color: #2196F3;
@@ -171,8 +170,7 @@
 	font-size: inherit;
 	text-rendering: auto;
 	-webkit-font-smoothing: antialiased;
-	content: "\f0c5";
-	font-family: "Font Awesome 5 Free";
+	content: "⧉";
 	float: right;
 	color: #000;
 	cursor: pointer;
