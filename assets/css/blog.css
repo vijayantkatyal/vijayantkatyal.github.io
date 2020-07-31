@@ -6,8 +6,13 @@ body{
 
 @media (max-width: 575.98px) {
 	.navbar.fixed-top {
-		background-color: rgba(255,255,255,0.3);
-		backdrop-filter: blur(4px);
+		/* background-color: rgba(255,255,255,0.3); */
+		/* backdrop-filter: blur(0.6px); */
+		position: inherit;
+	}
+
+	#blog_page, #index_page {
+		margin-top: 20px !important;
 	}
 
 	/* a {
