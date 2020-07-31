@@ -95,6 +95,10 @@ a:not([highlight="none"]):hover {
 	border: 1px solid var(--author-border-color);
 }
 
+.medium-zoom-image{
+	width: 100%;
+}
+
 .badge.bg-secondary:hover {
 	color: #fff;
 	background-color: var(--icon-hover-color) !important;
