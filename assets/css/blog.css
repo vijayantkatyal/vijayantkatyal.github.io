@@ -3,6 +3,29 @@ body{
 	font-family: Assistant;
 }
 
+
+@media (max-width: 575.98px) {
+	.navbar.fixed-top {
+		background-color: rgba(255,255,255,0.3);
+		backdrop-filter: blur(4px);
+	}
+
+	/* a {
+        color: #fff !important;
+    } */
+
+    #nav_icons > li > a > svg[fill=none]
+    {
+        stroke: #fff !important;
+    }
+
+    #nav_icons > li > a > svg:not([fill="none"])
+    {
+        stroke: #fff !important;
+        fill: #fff !important;
+    }
+}
+
 a {
 	color: var(--link-color);
 	text-decoration: none;
