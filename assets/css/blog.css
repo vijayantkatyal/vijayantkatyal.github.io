@@ -14,7 +14,7 @@ body{
         color: #fff !important;
     } */
 
-    #nav_icons > li > a > svg[fill=none]
+    /* #nav_icons > li > a > svg[fill=none]
     {
         stroke: #fff !important;
     }
@@ -23,7 +23,7 @@ body{
     {
         stroke: #fff !important;
         fill: #fff !important;
-    }
+    } */
 }
 
 a {
