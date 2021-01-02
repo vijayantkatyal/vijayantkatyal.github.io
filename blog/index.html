@@ -11,7 +11,7 @@ summary: Vijayant Katyal thoughts on life and development
 
 			{% if posts_count > 0 %}
 
-			<div itemscope='' itemtype='http://schema.org/Blog'>
+			<div id="posts_list" itemscope='' itemtype='http://schema.org/Blog'>
 
 				{% for post in paginator.posts %}
 
@@ -29,22 +29,14 @@ summary: Vijayant Katyal thoughts on life and development
 							</div>
 							<h2 itemprop="name headline"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
 						</header>
-						<section itemprop="articleBody">
-							<p class="text-muted">
-								{% if post.summary %}
-									{{ post.summary }}
-								{% endif %}
-							</p>
-						</section>
+						
 					</article>
 				
 				{% endfor %}
-				
-				<br><br><br>
-
-				{% include pagination.html %}
 
 			</div>
+			<br><br><br>
+			{% include pagination.html %}
 			{% else %}
 				<h1 class='text-xs-center'>{{ site.text.index.coming_soon }}</h3>
 			{% endif %}
