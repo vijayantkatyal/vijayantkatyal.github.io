@@ -7,6 +7,7 @@ services:
     command: jekyll serve --livereload --verbose
     ports:
       - 4000:4000
+      - 35729:35729
     volumes:
       - .:/srv/jekyll
       - ./vendor/bundle:/usr/local/bundle
