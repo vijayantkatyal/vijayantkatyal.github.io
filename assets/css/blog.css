@@ -219,3 +219,10 @@ a:not([highlight="none"]):hover {
 .medium-zoom-overlay{
 	background: #1b1b1b !important;
 }
+
+code {
+	color: #17a2b8;
+	font-weight: bold;
+	padding: 10px;
+	background-color: #2d2b2b;
+}
