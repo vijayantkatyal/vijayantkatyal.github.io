@@ -7,8 +7,6 @@ categories: life thoughts
 comments : false
 ---
 
-## Why this blog
-
 I want this space to be myself. where i can share my journey, memories, ideas and etc. lot of things in my mind which i think by writing can help clear my thoughts whether it's about work, life, memories, or ideas on my mind.
 
 this is just my personal space, where i can share my thoughts about everything. I will try to be myself unfiltered as much as possible.
