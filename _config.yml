@@ -106,3 +106,5 @@ show-tags: true
 
 # show next & prev links in blog post?
 blog-nav-links: false
+
+timezone: Asia/Kolkata
