@@ -4,7 +4,8 @@ services:
   site:
     container_name: blog
     image: jekyll/jekyll:4.2.2
-    command: jekyll serve --livereload --verbose
+    # command: jekyll serve --livereload --verbose
+    command: jekyll serve --drafts --livereload --verbose
     ports:
       - 4000:4000
       - 35729:35729
