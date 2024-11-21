@@ -1,7 +1,7 @@
 ---
 layout: index
-meta_description: Vijayant Katyal is a full stack web developer helping make the world a better place through his work.
-summary: Vijayant Katyal thoughts on life and development
+meta_description: Vijayant Katyal thoughts on life and work.
+summary: Vijayant Katyal thoughts on life and work
 ---
 <div class="container-fluid" id="index_page">
 
@@ -10,21 +10,21 @@ summary: Vijayant Katyal thoughts on life and development
 		<h1>Vijayant Katyal</h1>
 	</div>
 
-	<div class="summary_card m_t_20 m_b_10">
-		I am a full stack web developer from india, helping
-		<br>
-		make the world a better place through my work.
+	<div class="summary_card m_t_20 m_b_10 text_center">
+		👋, I am a full-stack web developer from india
+		<br/>
+		"<s>helping make the world a better place through my work</s>" 🙃 "not yet"
 	</div>
 	
-	<!-- <div class="summary_card m_t_10">
-		<b class="title">currently working on <a target="blank" href="https://myjumpstreet.com">@myjumpstreet</a></b>
+	<div class="summary_card m_t_10 text_center">
+		<b class="title">currently working on <a target="blank" href="https://snazzymo.com">snazzymo.com</a></b>
 		<br>
 		<span class="description">
-			platform to find sports and activities around you
+			video interaction platform
 		</span>
-	</div> -->
+	</div>
 	
-	<div class="summary_card">
+	<!-- <div class="summary_card">
 		<b class="title">recent <a href="/projects">projects</a></b>
 		<br>
 		<div id="projects">
@@ -43,12 +43,12 @@ summary: Vijayant Katyal thoughts on life and development
 				</span>
 			</div>
 		</div>
-	</div>
+	</div> -->
 
-	<div class="summary_card">
+	<div class="summary_card text_center">
 		<b class="title">recent posts from <a href="/blog">blog</a></b>
 		<div class="description">
-			{% for post in site.posts limit:2 %}
+			{% for post in site.posts limit:3 %}
 				<a href="{{ post.id }}">{{ post.title }}</a><br>
 			{% endfor %}
 		</div>

@@ -1,5 +1,8 @@
 <nav class="navbar navbar-expand fixed-top navbar-light">
 	<a class="navbar-brand app_icon" href="/">V</a>
+	{% if layout.show_blog_link or page.show_blog_link %}
+	&nbsp;&nbsp;/&nbsp;<a class="navbar-brand2 app_icon2" href="/blog">Blog</a>
+	{% endif %}
 
 	<ul class="navbar-nav ml-auto" id="nav_icons">
 		<li class="nav-item active">

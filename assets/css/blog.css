@@ -226,3 +226,7 @@ code {
 	padding: 10px;
 	background-color: #2d2b2b;
 }
+
+.text_center {
+	text-align: center !important;
+}
