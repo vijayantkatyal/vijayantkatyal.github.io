@@ -1,13 +1,17 @@
 <div class="card post_footer text-white bg-dark">
 	<div class="row g-0">
-		<div class="col-12 col-sm-9 col-md-9">
+		<div class="col-12 col-sm-10 col-md-10">
 			<div class="card-body">
-	  			<h5 class="card-title">{{ site.author }}</h5>
+	  			<h5 class="card-title">
+					<a href="/">
+						{{ site.author }}
+					</a>
+				</h5>
 	  			<p class="card-text">{{ site.bio }}</p>
-				<a href="/about" class="btn btn-primary" highlight="none">About Me</a>
+				<!-- <a href="/about" class="btn btn-primary" highlight="none">About Me</a> -->
 			</div>
 		</div>
-		<div class="col-3 img_wrapper d-none d-sm-block">
+		<div class="col-2 img_wrapper d-none d-sm-block">
 			<img src="{{ site.author_pic }}" class="img-fluid"  alt="...">
 		</div>
 	</div>
