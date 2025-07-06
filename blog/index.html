@@ -7,7 +7,7 @@ show_blog_link: true
 
 <div class="container-fluid" id="blog_page">
 	<div class="row">
-		<div class="col-12 col-sm-12 col-md-10 ml-auto mr-auto">
+		<div class="col-12 col-sm-12 col-md-10 ms-auto me-auto">
 			{% assign posts_count = paginator.posts | size %}
 
 			{% if posts_count > 0 %}
@@ -22,7 +22,7 @@ show_blog_link: true
 								<div class="col-12">
 									<time itemprop="datePublished" datetime="{{ post.date | date: site.date_format }}">{{ post.date | date: site.date_format }}</time> {% if post.comments != false %} | <a href="{{ post.url | prepend: site.baseurl }}#disqus_thread" data-discuss-identifier="{{ post.id }}">0 Comments</a> {% endif %}
 								</div>
-								<!-- <div class="col-6 text-right">
+								<!-- <div class="col-6 text-end">
 									{% for category in post.categories %}
 										<a itemprop="keywords" href="/blog/category/{{ category }}" class="badge bg-secondary">{{ category }}</a>
 									{% endfor %}						
@@ -39,7 +39,7 @@ show_blog_link: true
 			<br><br><br>
 			{% include pagination.html %}
 			{% else %}
-				<h1 class='text-xs-center'>{{ site.text.index.coming_soon }}</h3>
+				<h1 class='text-center'>{{ site.text.index.coming_soon }}</h3>
 			{% endif %}
 		</div>
 	</div>

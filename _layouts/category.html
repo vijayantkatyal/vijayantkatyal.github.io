@@ -4,7 +4,7 @@ layout: index
 
 <div class="container-fluid" id="blog_page">
 	<div class="row">
-		<div class="col-12 col-sm-12 col-md-10 ml-auto mr-auto">
+		<div class="col-12 col-sm-12 col-md-10 ms-auto me-auto">
 			
 			<div class="card border-info bg-dark mb-5">
 				<div class="card-body text-info">
@@ -20,7 +20,7 @@ layout: index
 			{% assign category_size = site.categories[page.category] | size %}
 			{% if category_size == 0 %}
 				<br><br>
-				<h3 class="text-warning text-xs-center">No posts in this category at this time.</h3>
+				<h3 class="text-warning text-center">No posts in this category at this time.</h3>
 				<br><br><br>
 				<br><br><br>
 				<br><br><br>
@@ -34,7 +34,7 @@ layout: index
 								<div class="col-6">
 									<time datetime="{{ post.date | date: site.date_format }}">{{ post.date | date: site.date_format }}</time> {% if post.comments != false %} | <a href="{{ post.url | prepend: site.baseurl }}#disqus_thread" data-discuss-identifier="{{ post.id }}">0 Comments</a> {% endif %}
 								</div>
-								<div class="col-6 text-right">
+								<div class="col-6 text-end">
 									{% for category in post.categories %}
 										<a class="badge bg-secondary" href="/blog/category/{{ category }}">{{ category }}</a>
 									{% endfor %}				
