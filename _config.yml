@@ -7,7 +7,7 @@ url:         "https://vijayantkatyal.com"
 date_format: "%b %-d, %Y"
 email: hello@vijayantkatyal.com
 bio: 👋, I am a full stack web developer from india
-author_pic: /assets/images/me/current.png
+author_pic: /assets/images/me/current.jpg
 
 # blog settings
 permalink: /blog/:title.html
@@ -54,7 +54,7 @@ text:
     coming_soon: 'Coming soon...'
   og_locale: 'en_US'
 
-jekyll-mentions: https://twitter.com
+jekyll-mentions: https://x.com
 
 # Build settings
 markdown: kramdown
