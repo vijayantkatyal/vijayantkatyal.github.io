@@ -4,7 +4,7 @@ title:      using Linkedin v2 API to login and get profile, company pages and mo
 date:       2019-02-08 13:41
 summary:    how to use Linkedin OAuth 2 REST API to login, get access token and using that token to get profile, company pages, groups and connections
 categories: rest-api node express javascript
-comments : true
+comments : false
 ---
 
 recently worked on a node js project which requires to login via Linkedin API and then use access token generated via login to access profile, company pages data. here are the steps i followed to make it work.

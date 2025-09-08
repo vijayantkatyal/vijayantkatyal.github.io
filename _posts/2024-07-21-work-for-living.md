@@ -4,7 +4,7 @@ title:      Work for Living
 date:       2024-07-21 03:03
 summary:    thought on work and how i approach it
 categories: life thoughts
-comments : true
+comments : false
 ---
 
 the issue is not about making money, but making money from the type of work you want.

@@ -20,7 +20,7 @@ show_blog_link: true
 						<header>
 							<div class="row">
 								<div class="col-12">
-									<time itemprop="datePublished" datetime="{{ post.date | date: site.date_format }}">{{ post.date | date: site.date_format }}</time> {% if post.comments != false %} | <a href="{{ post.url | prepend: site.baseurl }}#disqus_thread" data-discuss-identifier="{{ post.id }}">0 Comments</a> {% endif %}
+									<time itemprop="datePublished" datetime="{{ post.date | date: site.date_format }}">{{ post.date | date: site.date_format }}</time>
 								</div>
 								<!-- <div class="col-6 text-end">
 									{% for category in post.categories %}

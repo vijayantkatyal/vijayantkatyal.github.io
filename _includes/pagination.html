@@ -2,20 +2,16 @@
 	<div class="col text-sm-start col-6 text-center">
 		{% if paginator.previous_page %}
 			{% if paginator.page == 2 %}
-				<a href="{{ site.baseurl }}/blog/" class="btn btn-outline-info">Newer Posts</a>
+				<a href="{{ site.baseurl }}/blog/"><i class="bi bi-chevron-left"></i> Newer Posts</a>
 			{% else %}
-				<a href="{{ paginator.previous_page_path }}" class="btn btn-outline-info">Newer Posts</a>
+				<a href="{{ paginator.previous_page_path }}"><i class="bi bi-chevron-left"></i> Newer Posts</a>
 			{% endif %}
-		{% else %}
-			<a href="#" class="btn btn-outline-secondary disabled">Newer Posts</a>
 		{% endif %}
 	</div>
 	<!--<div class="col-md-4 col-sm-4 text-sm-center col-12 text-center text-muted" style="margin-top:5px;">Page {{ paginator.page }} of {{ paginator.total_pages }}</div>-->
-	<div class="col text-end col-6 text-center">
+	<div class="col text-end col-6 text-right">
 		{% if paginator.next_page %}
-			<a href="{{ paginator.next_page_path }}" class="btn btn-outline-info">Older Posts</a>
-		{% else %}
-			<a href="#" class="btn btn-outline-secondary disabled">Older Posts</a>
+			<a href="{{ paginator.next_page_path }}">Older Posts <i class="bi bi-chevron-right"></i></a>
 		{% endif %}
 	</div>
 </div>
