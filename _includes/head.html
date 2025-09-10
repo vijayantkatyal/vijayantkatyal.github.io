@@ -10,8 +10,12 @@
 	<meta name="robots" content="all">{% endif %}
 	<meta name="author" content="{{ site.author }}">
 	<link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Vijayant Katyal">
-	<meta name="description"
-		content="{% if page.meta_description %}{{ page.meta_description | xml_escape }}{% elsif page.summary %}{{ page.summary | xml_escape }}{% else %}{{ site.description | xml_escape }}{% endif %}">
+	{% if page.layout == "post" and page.summary %}
+		<meta name="description" content="{{ page.summary | xml_escape }}">
+	{% else %}
+		<meta name="description"
+			content="{% if page.meta_description %}{{ page.meta_description | xml_escape }}{% elsif page.summary %}{{ page.summary | xml_escape }}{% else %}{{ site.description | xml_escape }}{% endif %}">
+	{% endif %}
 	{% if page.categories %}
 		<meta name="keywords" content="{{ page.categories | join: ', ' }}">{% endif %}
 	{% if site.google_verification %}
@@ -31,8 +35,11 @@
 		<meta name="twitter:site" content="@{{ site.twitter_username }}" />
 	{% endif %}
 	<meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
-	<meta name="twitter:description"
-		content="{% if page.summary %}{{ page.summary }}{% else %}{{ site.description }}{% endif %}" />
+	{% if page.layout == "post" and page.summary %}
+	<meta name="twitter:description" content="{{ page.summary | xml_escape }}" />
+	{% else %}
+	<meta name="twitter:description" content="{% if page.meta_description %}{{ page.meta_description | xml_escape }}{% elsif page.summary %}{{ page.summary | xml_escape }}{% else %}{{ site.description | xml_escape }}{% endif %}" />
+	{% endif %}
 	<meta name="twitter:url" content="{{ site.url }}{{ page.url }}" />
 
 	<title>{{ site.title | strip_html }}{% if page.title %} &#8211; {{ page.title | strip_html }} {% endif %}</title>

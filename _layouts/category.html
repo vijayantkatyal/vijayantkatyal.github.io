@@ -8,8 +8,17 @@ layout: index
 			
 			<div class="card border-info bg-dark mb-5">
 				<div class="card-body text-info">
-					<h5 class="card-title">{{ page.title }}</h5>
-					<p class="card-text">All Posts tagged "{{ page.title }}"</p>
+					<div class="row">
+						<div class="col-8">
+							<h1 class="card-title">{{ page.title }}</h1>
+							<p class="card-text">All Posts tagged "{{ page.title }}"</p>
+						</div>
+						<div class="col-4" style="display: flex; align-items: center; justify-content: end;">
+							<p class="card-text">
+								<a href="/blog/categories" data-bs-theme="dark" class="btn btn-secondary">Show All Categories</a>
+							</p>
+						</div>
+					</div>
 				</div>
 			</div>
 
@@ -32,7 +41,7 @@ layout: index
 						<header>
 							<div class="row">
 								<div class="col-6">
-									<time datetime="{{ post.date | date: site.date_format }}">{{ post.date | date: site.date_format }}</time> {% if post.comments != false %} | <a href="{{ post.url | prepend: site.baseurl }}#disqus_thread" data-discuss-identifier="{{ post.id }}">0 Comments</a> {% endif %}
+									<time datetime="{{ post.date | date: site.date_format }}">{{ post.date | date: site.date_format }}</time>
 								</div>
 								<div class="col-6 text-end">
 									{% for category in post.categories %}
@@ -43,7 +52,7 @@ layout: index
 							<h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
 						</header>
 						<section class="post-excerpt">
-							<p class="text-muted">
+							<p data-bs-theme="dark" class="text-muted">
 								{% if post.summary %}
 									{{ post.summary }}
 								{% endif %}
