@@ -8,7 +8,7 @@ show_blog_link: true
 		{{ page.title }}
 	</h1>
 	<p class="lead mb-3 text-muted" data-bs-theme="dark">
-		<span itemprop="datePublished">{{ page.date | date: site.date_format }}</span> {% if page.update_date %} | <span class="text-success">{{ site.text.post.updated }}: {{ page.update_date | date: site.date_format }}</span> {% endif %} {% if page.comments != false %} | <a href="{{ page.url | prepend: site.baseurl }}#disqus_thread" data-discuss-identifier="{{ page.id }}">0 Comments</a> {% endif %}
+		<span itemprop="datePublished">{{ page.date | date: site.date_format }}</span> {% if page.update_date %} | <span class="text-success">{{ site.text.post.updated }}: {{ page.update_date | date: site.date_format }}</span> {% endif %}
 	</p>
 	{% for category in page.categories %}
 		<a class="badge text-bg-dark" data-bs-theme="dark" itemprop="keywords" href="/blog/category/{{ category }}">{{ category }}</a>
@@ -19,12 +19,8 @@ show_blog_link: true
 
 {% if page.intro_image != null %}
 	<br>
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-10 offset-1">
-				<img class="img-fluid" src="/assets/{{ page.intro_image }}" alt="">
-			</div>
-		</div>
+	<div class="col-12">
+		<img class="img-fluid" src="/assets/{{ page.intro_image }}" alt="">
 	</div>
 	<br>
 {% endif %}

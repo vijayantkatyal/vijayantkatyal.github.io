@@ -221,10 +221,10 @@ a:not([highlight="none"]):hover {
 }
 
 code {
-	color: #17a2b8;
+	/* color: #17a2b8;
 	font-weight: bold;
 	padding: 10px;
-	background-color: #2d2b2b;
+	background-color: #2d2b2b; */
 }
 
 .text_center {

@@ -1,8 +1,8 @@
 .highlight  { 
-	padding: 10px;
+	padding: 0px;
 	overflow: auto;
 	word-wrap: normal;
-	background: #2d2b2b;
+	background: #1b1b1b;
 	color: #f8f8f2;
 	/* border: 1px solid #ddd; */
 	border-radius: 2px 2px 0 0;
@@ -28,10 +28,10 @@
 	user-select: none;
 }
 .highlight .rouge-gutter {
-	border-right: 1px solid #495057;
+	border-right: none;
 	min-width: inherit;
-	padding-right: 15px !important;
-	background: #2d2b2b;
+	padding-right: 10px !important;
+	background: #212121;
 	width: 1%;
 	font-size: 14px;
 	line-height: 18px;
@@ -63,6 +63,10 @@
 .highlight pre pre {
 	border: none;
 	margin-bottom: 0px;
+}
+
+.highlight code {
+	padding: 0;
 }
 
 /* .rouge-gutter.gl pre.lineno{
@@ -98,7 +102,7 @@
 .highlight .ld { color: #e6db74 } /* Literal.Date */
 .highlight .m { color: #ae81ff } /* Literal.Number */
 .highlight .s { color: #e6db74 } /* Literal.String */
-.highlight .na { color: #a6e22e } /* Name.Attribute */
+.highlight .na { color: #878787 } /* Name.Attribute */
 .highlight .nb { color: #f8f8f2 } /* Name.Builtin */
 .highlight .nc { color: #a6e22e } /* Name.Class */
 .highlight .no { color: #66d9ef } /* Name.Constant */
@@ -110,7 +114,7 @@
 .highlight .nn { color: #f8f8f2 } /* Name.Namespace */
 .highlight .nx { color: #a6e22e } /* Name.Other */
 .highlight .py { color: #f8f8f2 } /* Name.Property */
-.highlight .nt { color: #f92672 } /* Name.Tag */
+.highlight .nt { color: #bababa } /* Name.Tag */
 .highlight .nv { color: #f8f8f2 } /* Name.Variable */
 .highlight .ow { color: #f92672 } /* Operator.Word */
 .highlight .w { color: #f8f8f2 } /* Text.Whitespace */
@@ -154,25 +158,29 @@
 }
 
 .code_title {
-	background-color: #e0e0e0;
+	background-color: #222222;
 	/* border-bottom: 1px solid #ddd; */
-	margin-top: 40px;
+	margin-top: 20px;
 	margin-bottom: 0px;
 	border-bottom: 0px;
 	padding: 10px;
-	color: #4d5053;
+	color: #dddddd;
 	font-weight: 500; 
 }
 
 .code_title::after {
 	display: inline-block;
 	font-size: inherit;
-	/* line-height: 20px; */
+	line-height: 5px;
 	text-rendering: auto;
 	-webkit-font-smoothing: antialiased;
-	content: "click here to copy";
+	content: "copy";
 	float: right;
-	color: #495057;
+	
 	cursor: pointer;
 	/* margin-top: 6px;  */
+
+	border: 1px solid #ccc;
+	border-radius: 40px;
+	padding: 10px;
 }
