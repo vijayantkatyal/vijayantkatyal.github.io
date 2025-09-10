@@ -230,3 +230,7 @@ code {
 .text_center {
 	text-align: center !important;
 }
+
+div[itemprop="articleBody"] {
+	font-size: 1.1rem;
+}
